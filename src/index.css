@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-espresso: #0b0908;
+  --color-brand-medium: #161210;
+  --color-brand-lightdark: #221c19;
+  --color-brand-cream: #f5f2eb;
+  --color-brand-latte: #ddcbb4;
+  --color-brand-gold: #c8a27c;
+  --color-brand-darkgold: #8c6239;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --animate-fade-in-up: fade-in-up 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-in-right: slide-in-right 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-in-left: slide-in-left 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Base resets & custom scrollbar */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-espresso);
+  color: var(--color-brand-cream);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color-brand-espresso);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-espresso);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-darkgold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gold);
+}
+
+/* Glassmorphism utility card border shine */
+.glass-panel {
+  background: rgba(22, 18, 16, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 162, 124, 0.15);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(200, 162, 124, 0.4);
+  background: rgba(22, 18, 16, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom visual slider track styling */
+input[type="range"] {
+  accent-color: var(--color-brand-gold);
+}
+
+/* Custom interactive flip card */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* ─── Smooth transition for ALL theme / direction changes ──── */
+/* One animation is enough — this applies it globally */
+html {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-fade-in-up {
+  will-change: transform, opacity;
+}
+
+.animate-slide-in-right {
+  will-change: transform;
+}
+
+.animate-slide-in-left {
+  will-change: transform;
+}
+
+/* ─── RTL: flip arrow icons + padding that are direction-aware ── */
+html[dir="rtl"] {
+  transition: all 0.4s ease;
+}
+
+/* ─── LIGHT MODE BY DEFAULT (when NOT .dark) ─────────────────── */
+/* Swap espresso↔cream so base dark colors become light by default */
+html:not(.dark) {
+  --color-brand-espresso: #f5f2eb;
+  /* was dark bg → now cream */
+  --color-brand-medium: #e8e2d8;
+  --color-brand-lightdark: #d6cfc4;
+  --color-brand-cream: #1a0e05;
+  /* was light text → now dark */
+  --color-brand-latte: #3b2510;
+  --color-brand-gold: #92530c;
+  --color-brand-darkgold: #7a4109;
+}
+
+/* Override explicit zinc/stone colours used by the new navbar + dashboard */
+html:not(.dark) body,
+html:not(.dark) main {
+  background-color: #f5f2eb;
+  color: #1a0e05;
+}
+
+html:not(.dark) nav {
+  background: rgba(245, 242, 235, 0.85) !important;
+  border-bottom-color: rgba(26, 14, 5, 0.1) !important;
+}
+
+/* Light mode: re-colour zinc-900 / zinc-800 dashboard cards */
+html:not(.dark) .bg-zinc-900 {
+  background-color: #e8e2d8 !important;
+}
+
+html:not(.dark) .bg-zinc-800 {
+  background-color: #d6cfc4 !important;
+}
+
+html:not(.dark) .bg-zinc-950 {
+  background-color: #f5f2eb !important;
+}
+
+html:not(.dark) .text-white {
+  color: #1a0e05 !important;
+}
+
+html:not(.dark) .text-white\/75 {
+  color: rgba(26, 14, 5, 0.75) !important;
+}
+
+html:not(.dark) .text-white\/60 {
+  color: rgba(26, 14, 5, 0.6) !important;
+}
+
+html:not(.dark) .text-zinc-300,
+html:not(.dark) .text-zinc-400 {
+  color: #5a3a1a !important;
+}
+
+html:not(.dark) .glass-panel {
+  background: rgba(232, 226, 216, 0.8) !important;
+  border-color: rgba(146, 83, 12, 0.2) !important;
+}
+
+
+/* ─── Button press micro-animation ──────────────────────────── */
+button:active {
+  transform: scale(0.95);
+}
+
+/* ─── Dropdown Theme Styling ─── */
+/* Default (Dark Mode / default) styles */
+.nav-dropdown-menu,
+.user-dropdown-menu {
+  background-color: #161210 !important;
+  border-color: #221c19 !important;
+}
+
+.nav-dropdown-menu button,
+.user-dropdown-menu button {
+  color: rgba(245, 242, 235, 0.8) !important;
+}
+
+.nav-dropdown-menu button:hover,
+.user-dropdown-menu button:hover {
+  color: #c8a27c !important;
+  background-color: rgba(200, 162, 124, 0.1) !important;
+}
+
+/* Active item in dropdown */
+.nav-dropdown-menu button.bg-brand-gold\/15 {
+  color: #c8a27c !important;
+  background-color: rgba(200, 162, 124, 0.15) !important;
+}
+
+/* User profile dropdown header texts */
+.user-dropdown-menu .text-brand-cream\/50 {
+  color: rgba(245, 242, 235, 0.5) !important;
+}
+
+.user-dropdown-menu .text-brand-cream {
+  color: #f5f2eb !important;
+}
+
+/* Light Mode Overrides */
+html:not(.dark) .nav-dropdown-menu,
+html:not(.dark) .user-dropdown-menu {
+  background-color: #e8e2d8 !important;
+  border-color: #d6cfc4 !important;
+}
+
+html:not(.dark) .nav-dropdown-menu button,
+html:not(.dark) .user-dropdown-menu button {
+  color: rgba(26, 14, 5, 0.85) !important;
+}
+
+html:not(.dark) .nav-dropdown-menu button:hover,
+html:not(.dark) .user-dropdown-menu button:hover {
+  color: #92530c !important;
+  background-color: rgba(146, 83, 12, 0.1) !important;
+}
+
+/* Light mode active item in dropdown */
+html:not(.dark) .nav-dropdown-menu button.bg-brand-gold\/15 {
+  color: #92530c !important;
+  background-color: rgba(146, 83, 12, 0.15) !important;
+}
+
+/* Light mode user profile dropdown header texts */
+html:not(.dark) .user-dropdown-menu .text-brand-cream\/50 {
+  color: rgba(26, 14, 5, 0.5) !important;
+}
+
+html:not(.dark) .user-dropdown-menu .text-brand-cream {
+  color: #1a0e05 !important;
+}
+
+/* Light mode sign out button */
+html:not(.dark) .user-dropdown-menu button.text-red-400 {
+  color: #c53030 !important;
+}
+
+html:not(.dark) .user-dropdown-menu button.text-red-400:hover {
+  background-color: rgba(197, 48, 48, 0.1) !important;
+}
