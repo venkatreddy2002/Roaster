@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en" class="dark" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obscura Coffee Roasters | Specialty Micro-Lot Sourcing</title>
+    <meta
+      name="description"
+      content="Obscura Coffee Roasters sources high-altitude single origin micro-lots directly from remote farms and roasts them in Seattle, WA. Join the subscription club today."
+    />
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme");
+          if (theme === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+          const rtl = localStorage.getItem("rtl") === "true";
+          if (rtl) {
+            document.documentElement.setAttribute("dir", "rtl");
+          } else {
+            document.documentElement.setAttribute("dir", "ltr");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="../css/global.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/theme.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/rtl.css?v=1781245913707" />
+    <script src="./assets/app.js?v=1781245878214" defer=""></script>
+  </head>
+  <body class="bg-[#0b0908]">
+    <div id="root">
+      <div
+        class="min-h-screen bg-brand-espresso text-brand-cream flex flex-col font-sans antialiased selection:bg-brand-gold/30"
+      >
+        <header
+          class="w-full border-b border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80 bg-brand-espresso/80 backdrop-blur-md sticky top-0 z-40"
+        >
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4"
+          >
+            <div class="flex items-center gap-3">
+              <button
+                class="md:hidden w-9 h-9 rounded-xl flex items-center justify-center bg-white/10 hover:bg-white/20 text-white active:scale-95 transition-all border border-transparent hover:border-white/5 focus:border-white/5 dashboard-menu-btn"
+                aria-label="Open Navigation"
+              >
+                <i
+                  data-lucide="menu"
+                  class="w-4.5 h-4.5 text-brand-gold"
+                ></i></button
+              ><a
+                href="../index.html"
+                class="flex items-center gap-2.5 group shrink-0 cursor-pointer"
+                ><div
+                  class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-darkgold to-brand-gold flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"
+                >
+                  <i
+                    data-lucide="coffee"
+                    class="w-4 h-4 text-brand-espresso"
+                  ></i>
+                </div>
+                <div class="text-left leading-none hidden sm:block">
+                  <span
+                    class="block text-base font-bold tracking-widest text-brand-gold font-serif"
+                    >OBSCURA</span
+                  ><span
+                    class="block text-[9px] uppercase tracking-widest text-brand-gold/70"
+                    >Coffee Roasters</span
+                  >
+                </div>
+                <span
+                  class="sm:hidden text-base font-bold tracking-widest text-brand-gold font-serif"
+                  >OBSCURA</span
+                ></a
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="hidden md:flex items-center gap-2">
+                <button
+                  title="Switch to RTL"
+                  class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all duration-300 bg-brand-medium/40 border-transparent focus:border-neutral-700/60 text-brand-cream/50 hover:text-brand-cream hover:border-neutral-600"
+                >
+                  <span class="transition-all duration-300">RTL</span></button
+                ><button
+                  title="Switch to Light mode"
+                  class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all duration-300 bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold"
+                >
+                  <i data-lucide="sun" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="flex-grow">
+          <div class="max-w-7xl mx-auto px-6 py-6 md:py-8 animate-fade-in-up">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+              <div
+                class="hidden md:flex w-60 shrink-0 flex-col md:sticky md:top-[5.5rem] md:self-start border border-transparent hover:border-zinc-800 focus:border-zinc-800 rounded-2xl overflow-hidden bg-brand-espresso/40"
+              >
+                <div
+                  class="bg-brand-espresso/70 p-4 py-5 text-center flex flex-col items-center border-b border-transparent hover:border-zinc-800 focus:border-zinc-800"
+                >
+                  <div
+                    class="w-14 h-14 bg-brand-gold/15 text-brand-gold flex items-center justify-center text-xl font-bold font-serif mb-3 rounded-full"
+                  >
+                    C
+                  </div>
+                  <h4
+                    class="text-white font-serif font-bold text-base leading-snug"
+                  >
+                    Coffee Enthusiast
+                  </h4>
+                  <span
+                    class="text-[10px] text-brand-gold uppercase tracking-widest font-bold mt-1"
+                    >Obscura Member</span
+                  >
+                  <div class="flex justify-around w-full text-xs mt-3">
+                    <div class="text-center">
+                      <span
+                        class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                        >Points</span
+                      ><span class="font-bold text-white font-mono">3210</span>
+                    </div>
+                    <div class="text-center">
+                      <span
+                        class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                        >Orders</span
+                      ><span class="font-bold text-white font-mono">5</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col w-full bg-brand-espresso/40 p-1.5 space-y-0.5"
+                >
+                  <a
+                    href="dashboard.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all w-full text-left whitespace-nowrap rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="user" class="w-4 h-4"></i
+                    ><span>Overview</span></a
+                  ><a
+                    href="orders.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all w-full text-left whitespace-nowrap rounded-xl bg-brand-gold text-brand-espresso"
+                  >
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i
+                    ><span>Order History</span></a
+                  ><a
+                    href="favorites.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all w-full text-left whitespace-nowrap rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="heart" class="w-4 h-4"></i
+                    ><span>Saved Favorites</span>
+                  </a>
+                  <div class="h-px bg-zinc-800/50 my-1"></div>
+                  <a
+                    href="../index.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-white hover:bg-white/5 transition-all whitespace-nowrap w-full text-left rounded-xl"
+                  >
+                    <i data-lucide="log-out" class="w-4 h-4 -rotate-180"></i
+                    ><span>Back to Store</span></a>
+                  <a
+                    href="user-settings.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-white hover:bg-white/5 transition-all whitespace-nowrap w-full text-left rounded-xl"
+                  >
+                    <i data-lucide="settings" class="w-4 h-4"></i
+                    ><span>Settings</span></a
+                  ><a
+                    href="../index.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider text-red-400 hover:bg-red-950/30 hover:text-red-300 transition-all whitespace-nowrap w-full text-left rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="log-out" class="w-4 h-4"></i
+                    ><span>Sign Out</span>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="dashboard-drawer"
+                class="fixed inset-0 z-50 flex md:hidden hidden"
+              >
+                <div
+                  class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 dashboard-drawer-backdrop"
+                ></div>
+                <div
+                  class="relative flex-1 flex flex-col max-w-xs w-full bg-brand-espresso border-r border-transparent hover:border-zinc-800 focus:border-zinc-800 animate-slide-in-left p-6"
+                >
+                  <div
+                    class="absolute top-4 right-4 z-10 flex items-center gap-2"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full flex items-center justify-center bg-white/5 text-neutral-450 hover:text-white border border-transparent hover:border-white/5 focus:border-white/5 dashboard-drawer-close"
+                    >
+                      <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                  </div>
+                  <div
+                    class="flex-1 flex flex-col overflow-y-auto scrollbar-none pt-8"
+                  >
+                    <div
+                      class="p-4 text-center flex flex-col items-center border-b border-transparent hover:border-zinc-800/60 focus:border-zinc-800/60"
+                    >
+                      <div
+                        class="w-14 h-14 bg-brand-gold/15 text-brand-gold flex items-center justify-center text-xl font-bold font-serif mb-3 rounded-full"
+                      >
+                        C
+                      </div>
+                      <h4
+                        class="text-white font-serif font-bold text-base leading-snug"
+                      >
+                        Coffee Enthusiast
+                      </h4>
+                      <span
+                        class="text-[10px] text-brand-gold uppercase tracking-widest font-bold mt-1"
+                        >Obscura Member</span
+                      >
+                      <div class="flex justify-around w-full text-xs mt-4">
+                        <div class="text-center">
+                          <span
+                            class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                            >Points</span
+                          ><span class="font-bold text-white font-mono"
+                            >3210</span
+                          >
+                        </div>
+                        <div class="text-center">
+                          <span
+                            class="block text-zinc-505 font-bold uppercase tracking-wider text-[9px]"
+                            >Orders</span
+                          ><span class="font-bold text-white font-mono">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col w-full mt-4">
+                      <a
+                        href="dashboard.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="user" class="w-4 h-4"></i
+                        ><span>Overview</span></a
+                      ><a
+                        href="orders.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 bg-brand-gold text-brand-espresso"
+                      >
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i
+                        ><span>Order History</span></a
+                      ><a
+                        href="favorites.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="heart" class="w-4 h-4"></i
+                        ><span>Saved Favorites</span></a
+                      ><a
+                        href="coffee-club.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                        ><i data-lucide="coffee" class="w-4 h-4"></i
+                        ><span>Coffee Club</span></a
+                      ><a
+                        href="user-settings.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                        ><i data-lucide="settings" class="w-4 h-4"></i
+                        ><span>Settings</span></a
+                      >
+                    </div>
+                    <div
+                      class="mt-6 border-t border-transparent hover:border-zinc-800 focus:border-zinc-800 pt-6 space-y-4"
+                    >
+                      <a
+                        href="../index.html"
+                        class="flex items-center gap-3 px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-white hover:bg-white/5 transition-colors rounded-xl w-full text-left"
+                      >
+                        <i data-lucide="log-out" class="w-4 h-4 -rotate-180"></i
+                        ><span>Back to Store</span></a
+                      ><a
+                        href="../index.html"
+                        class="flex items-center gap-3 px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-red-505/80 hover:text-red-400 hover:bg-red-505/5 transition-colors rounded-xl w-full text-left text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="log-out" class="w-4 h-4"></i
+                        ><span>Sign Out</span>
+                      </a>
+                      <div class="flex gap-2">
+                        <button
+                          type="button"
+                          title="Switch to RTL"
+                          class="flex-grow flex items-center justify-center py-2 h-9 rounded-xl bg-white/5 border border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 text-xs font-bold uppercase tracking-wider transition-all"
+                        >
+                          <span>RTL</span></button
+                        ><button
+                          type="button"
+                          title="Switch to Light mode"
+                          class="flex-grow flex items-center justify-center py-2 h-9 rounded-xl bg-white/5 border border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 transition-all"
+                        >
+                          <i data-lucide="sun" class="w-4 h-4"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-grow w-full space-y-6 md:border-l md:border-zinc-200 md:dark:border-zinc-800/60 md:pl-8 rtl:md:border-l-0 rtl:md:border-r rtl:md:pl-0 rtl:md:pr-8"
+              >
+                <div
+                  class="border-b border-zinc-200 dark:border-zinc-800/60 pb-2"
+                >
+                  <h2
+                    class="text-sm md:text-base font-bold uppercase tracking-widest text-brand-cream text-left"
+                  >
+                    ORDER HISTORY
+                  </h2>
+                </div>
+                <div class="space-y-1">
+                  <span
+                    class="text-[10px] uppercase font-bold tracking-widest text-brand-gold"
+                    >History</span
+                  >
+                  <h2
+                    class="text-3xl font-serif font-bold text-brand-cream flex items-center mt-1"
+                  >
+                    <i
+                      data-lucide="shopping-bag"
+                      class="w-6.5 h-6.5 mr-2.5 text-brand-gold"
+                    ></i>
+                    Order History
+                  </h2>
+                  <p class="text-brand-latte/70 text-sm">
+                    Review details of your premium purchases, subscription
+                    shipments, and custom blends.
+                  </p>
+                </div>
+                <div class="space-y-6">
+                  <!-- Single Detailed Order Card -->
+                  <div
+                    class="border border-zinc-800/60 bg-brand-medium/20 rounded-2xl overflow-hidden"
+                  >
+                    <!-- Order Header -->
+                    <div
+                      class="p-5 md:p-6 border-b border-zinc-800/60 flex flex-col md:flex-row md:items-center justify-between gap-4"
+                    >
+                      <div>
+                        <div class="flex items-center gap-3 mb-1">
+                          <h3 class="text-lg font-serif font-bold text-white">
+                            Order #ORD-2024-089
+                          </h3>
+                          <span
+                            class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5"
+                          >
+                            <i data-lucide="check-circle-2" class="w-3 h-3"></i>
+                            Delivered
+                          </span>
+                        </div>
+                        <p class="text-xs text-zinc-400">
+                          Placed on June 1, 2026 at 10:24 AM
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3 w-full md:w-auto">
+                        <button
+                          class="flex-1 md:flex-none px-4 py-2 bg-white/5 hover:bg-white/10 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 border border-white/5"
+                        >
+                          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                          Invoice
+                        </button>
+                        <button
+                          class="flex-1 md:flex-none px-4 py-2 bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso rounded-xl text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
+                        >
+                          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+                          Reorder
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Order Items -->
+                    <div class="p-5 md:p-6">
+                      <div class="space-y-4">
+                        <!-- Item 1 -->
+                        <div
+                          class="flex items-start gap-4 pb-4 border-b border-zinc-800/40"
+                        >
+                          <div
+                            class="w-16 h-16 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0"
+                          >
+                            <i
+                              data-lucide="coffee"
+                              class="w-8 h-8 text-brand-gold/50"
+                            ></i>
+                          </div>
+                          <div class="flex-1 min-w-0">
+                            <div
+                              class="flex flex-col sm:flex-row sm:items-start justify-between gap-2"
+                            >
+                              <div>
+                                <h4 class="font-bold text-white truncate">
+                                  Ethiopia Yirgacheffe
+                                </h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">
+                                  Washed Process • Light Roast • 250g
+                                </p>
+                              </div>
+                              <div class="text-left sm:text-right shrink-0">
+                                <div class="font-bold text-white font-mono">
+                                  $24.00
+                                </div>
+                                <div
+                                  class="text-[10px] text-zinc-500 uppercase tracking-widest mt-0.5"
+                                >
+                                  Qty: 2
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div
+                          class="flex items-start gap-4 pb-4 border-b border-zinc-800/40 last:border-0 last:pb-0"
+                        >
+                          <div
+                            class="w-16 h-16 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0"
+                          >
+                            <i
+                              data-lucide="coffee"
+                              class="w-8 h-8 text-amber-500/50"
+                            ></i>
+                          </div>
+                          <div class="flex-1 min-w-0">
+                            <div
+                              class="flex flex-col sm:flex-row sm:items-start justify-between gap-2"
+                            >
+                              <div>
+                                <h4 class="font-bold text-white truncate">
+                                  Guatemala Antigua
+                                </h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">
+                                  Natural Process • Medium Roast • 500g
+                                </p>
+                              </div>
+                              <div class="text-left sm:text-right shrink-0">
+                                <div class="font-bold text-white font-mono">
+                                  $35.50
+                                </div>
+                                <div
+                                  class="text-[10px] text-zinc-500 uppercase tracking-widest mt-0.5"
+                                >
+                                  Qty: 1
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Order Summary -->
+                      <div
+                        class="mt-6 pt-6 border-t border-zinc-800/60 flex flex-col sm:flex-row justify-between gap-6"
+                      >
+                        <div class="w-full sm:w-1/2 space-y-4">
+                          <div>
+                            <h5
+                              class="text-[10px] uppercase tracking-widest font-bold text-zinc-500 mb-1.5"
+                            >
+                              Shipping Address
+                            </h5>
+                            <p class="text-xs text-zinc-300 leading-relaxed">
+                              John Doe<br />
+                              123 Roaster Avenue, Suite 400<br />
+                              Seattle, WA 98101<br />
+                              United States
+                            </p>
+                          </div>
+                        </div>
+                        <div class="w-full sm:w-64 space-y-2">
+                          <div class="flex justify-between text-xs">
+                            <span class="text-zinc-400">Subtotal</span>
+                            <span class="text-white font-mono">$83.50</span>
+                          </div>
+                          <div class="flex justify-between text-xs">
+                            <span class="text-zinc-400"
+                              >Shipping (Express)</span
+                            >
+                            <span class="text-white font-mono">$5.00</span>
+                          </div>
+                          <div class="flex justify-between text-xs">
+                            <span class="text-zinc-400">Tax</span>
+                            <span class="text-white font-mono">$0.00</span>
+                          </div>
+                          <div
+                            class="pt-2 mt-2 border-t border-zinc-800/60 flex justify-between items-center"
+                          >
+                            <span
+                              class="text-sm font-bold text-brand-gold uppercase tracking-widest"
+                              >Total</span
+                            >
+                            <span
+                              class="text-lg font-bold text-brand-gold font-mono"
+                              >$88.50</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-brand-medium/20 border border-transparent hover:border-zinc-800 focus:border-zinc-800 p-6 rounded-2xl space-y-4 mt-8"
+                >
+                  <div class="space-y-1">
+                    <h3 class="text-lg font-serif font-bold text-white">
+                      Subscribe &amp; Save 15%
+                    </h3>
+                    <p class="text-zinc-400 text-xs">
+                      Never run out of freshly roasted single-origins. Join our
+                      active Coffee Club.
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-brand-medium/40 border border-transparent hover:border-zinc-850 focus:border-zinc-850 p-4 rounded-xl"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="w-10 h-10 bg-brand-gold/15 text-brand-gold rounded-full flex items-center justify-center font-bold font-serif text-sm"
+                      >
+                        C
+                      </div>
+                      <div>
+                        <h4
+                          class="text-xs font-bold text-brand-cream uppercase font-mono"
+                        >
+                          Obscura Coffee Club
+                        </h4>
+                        <p class="text-[10px] text-zinc-500">
+                          Free delivery • Cancel anytime • Customized profiles
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      class="bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-xl transition-colors whitespace-nowrap"
+                    >
+                      Join Coffee Club
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="bg-brand-medium/20 border border-transparent hover:border-zinc-800 focus:border-zinc-800 p-6 rounded-2xl space-y-4"
+                >
+                  <h3 class="text-lg font-serif font-bold text-white">
+                    Logistics &amp; Roasting Schedule
+                  </h3>
+                  <div class="space-y-3">
+                    <div
+                      class="border-b border-transparent hover:border-zinc-850/50 focus:border-zinc-850/50 pb-3 last:border-0 last:pb-0"
+                    >
+                      <h4
+                        class="text-xs font-bold text-brand-gold uppercase tracking-wider mb-1"
+                      >
+                        When is my coffee roasted?
+                      </h4>
+                      <p class="text-xs text-zinc-400 leading-relaxed">
+                        We roast every Tuesday and Thursday morning. Orders
+                        received before midnight are roasted in the next
+                        immediate batch to ensure maximum freshness.
+                      </p>
+                    </div>
+                    <div
+                      class="border-b border-transparent hover:border-zinc-850/50 focus:border-zinc-850/50 pb-3 last:border-0 last:pb-0"
+                    >
+                      <h4
+                        class="text-xs font-bold text-brand-gold uppercase tracking-wider mb-1"
+                      >
+                        How long is shipping?
+                      </h4>
+                      <p class="text-xs text-zinc-400 leading-relaxed">
+                        We ship nationwide via DHL/FedEx Express. Delivery
+                        typically takes 2-3 business days. You will receive
+                        tracking logs as soon as the package is collected.
+                      </p>
+                    </div>
+                    <div
+                      class="border-b border-transparent hover:border-zinc-850/50 focus:border-zinc-850/50 pb-3 last:border-0 last:pb-0"
+                    >
+                      <h4
+                        class="text-xs font-bold text-brand-gold uppercase tracking-wider mb-1"
+                      >
+                        Are packaging bags recyclable?
+                      </h4>
+                      <p class="text-xs text-zinc-400 leading-relaxed">
+                        Yes, our bags are made of 100% compostable Kraft paper
+                        with plant-based high-barrier lining. Simply remove the
+                        tin-tie before composting.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-brand-medium/20 border border-transparent hover:border-zinc-800 focus:border-zinc-800 p-6 rounded-2xl space-y-4"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                  >
+                    <div class="space-y-1">
+                      <h3 class="text-lg font-serif font-bold text-white">
+                        Invite Friends, Get Free Coffee
+                      </h3>
+                      <p class="text-zinc-400 text-xs">
+                        Share the obsession. Get 250g premium Panama Geisha for
+                        every successful referral.
+                      </p>
+                    </div>
+                    <div
+                      class="flex items-center gap-2 bg-zinc-900 border border-transparent hover:border-zinc-850 focus:border-zinc-850 px-3.5 py-2 rounded-xl"
+                    >
+                      <span class="text-xs font-mono text-zinc-400 select-all"
+                        >obscura.coffee/ref?user=enthusiast</span
+                      ><button
+                        class="text-[10px] uppercase font-bold text-brand-gold hover:text-white transition-colors"
+                      >
+                        Copy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="../js/theme.js?v=1781245913707" defer=""></script>
+    <script src="../js/rtl.js?v=1781245913707" defer=""></script>
+    <script src="../js/navigation.js?v=1781245913707" defer=""></script>
+  </body>
+</html>

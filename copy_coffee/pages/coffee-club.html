@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en" class="dark" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obscura Coffee Roasters | Specialty Micro-Lot Sourcing</title>
+    <meta
+      name="description"
+      content="Obscura Coffee Roasters sources high-altitude single origin micro-lots directly from remote farms and roasts them in Seattle, WA. Join the subscription club today."
+    />
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme");
+          if (theme === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+          const rtl = localStorage.getItem("rtl") === "true";
+          if (rtl) {
+            document.documentElement.setAttribute("dir", "rtl");
+          } else {
+            document.documentElement.setAttribute("dir", "ltr");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="../css/global.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/theme.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/rtl.css?v=1781245913707" />
+    <script src="./assets/app.js?v=1781245878214" defer=""></script>
+  </head>
+  <body class="bg-[#0b0908]">
+    <div id="root">
+      <div
+        class="min-h-screen bg-brand-espresso text-brand-cream flex flex-col font-sans antialiased selection:bg-brand-gold/30"
+      >
+        <nav
+          class="fixed top-0 w-full bg-brand-espresso z-50 border-b border-brand-lightdark hover:border-brand-lightdark focus:border-brand-lightdark transition-colors duration-300"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+          >
+            <a
+              href="../index.html"
+              class="flex items-center gap-2.5 group cursor-pointer"
+              ><div
+                class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-darkgold to-brand-gold flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"
+              >
+                <i data-lucide="coffee" class="w-4 h-4 text-brand-espresso"></i>
+              </div>
+              <div class="text-left leading-none">
+                <span
+                  class="block text-lg font-bold tracking-widest text-brand-gold font-serif"
+                  >OBSCURA</span
+                ><span
+                  class="block text-[9px] uppercase tracking-widest text-brand-gold/80"
+                  >Coffee Roasters</span
+                >
+              </div></a
+            >
+            <div class="hidden md:flex gap-6 items-center">
+              <div class="relative group py-2 flex flex-col items-center">
+                <button
+                  class="text-sm font-medium transition-all flex items-center gap-1 text-white/75 hover:text-white"
+                >
+                  Home<i
+                    data-lucide="chevron-down"
+                    class="w-3 h-3 opacity-60 transition-transform group-hover:rotate-180"
+                  ></i></button
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 hidden group-hover:block animate-fade-in-up"
+                >
+                  <div
+                    class="nav-dropdown-menu bg-brand-medium border border-transparent hover:border-brand-lightdark focus:border-brand-lightdark rounded-xl shadow-xl py-1 w-28"
+                  >
+                    <a
+                      href="../index.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Home 1</a
+                    ><a
+                      href="home2.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Home 2</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="shop.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Shop</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="coffee-club.html"
+                  class="inline-block text-sm font-medium transition-all text-brand-gold font-semibold"
+                  >Coffee Club</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-full opacity-100"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="contact.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Contact</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="about-beans.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Beans Story</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative group py-2 flex flex-col items-center">
+                <button
+                  class="text-sm font-medium transition-all flex items-center gap-1 text-white/75 hover:text-white"
+                >
+                  Dashboard<i
+                    data-lucide="chevron-down"
+                    class="w-3 h-3 opacity-60 transition-transform group-hover:rotate-180"
+                  ></i></button
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 hidden group-hover:block animate-fade-in-up"
+                >
+                  <div
+                    class="nav-dropdown-menu bg-brand-medium border border-transparent hover:border-brand-lightdark focus:border-brand-lightdark rounded-xl shadow-xl py-1 w-44"
+                  >
+                    <a
+                      href="admin-dashboard.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Admin Dashboard</a
+                    ><a
+                      href="dashboard.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >User Dashboard</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                title="Switch to RTL"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all bg-white/5 border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 hidden md:flex"
+              >
+                <span>RTL</span></button
+              ><button
+                title="Switch to Light mode"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold hidden md:flex"
+              >
+                <i data-lucide="sun" class="w-3.5 h-3.5"></i>
+              </button>
+              <div class="w-px h-5 bg-white/15 mx-1 hidden md:block"></div>
+              <button
+                class="p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors relative"
+                aria-label="Cart"
+              >
+                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+              </button>
+              <div class="relative hidden md:block">
+                <a
+                  href="login.html"
+                  class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-[#A66820] text-brand-cream hover:bg-[#8e581b] shadow-[0_4px_14px_rgba(166,104,32,0.4)] hover:shadow-[0_4px_14px_rgba(166,104,32,0.5)] border border-[#A66820]"
+                  ><i data-lucide="user" class="w-3.5 h-3.5"></i
+                  ><span class="hidden sm:inline">Sign In</span></a
+                >
+              </div>
+              <button
+                class="md:hidden mobile-menu-btn p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors"
+                aria-label="Open menu"
+              >
+                <i data-lucide="menu" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div id="mobile-drawer" class="fixed inset-0 z-50 md:hidden hidden">
+          <div
+            class="fixed inset-0 bg-black/60 backdrop-blur-sm drawer-backdrop"
+          ></div>
+          <div
+            class="fixed top-0 right-0 bottom-0 w-72 bg-white dark:bg-[#0b0908] border-l border-brand-lightdark p-6 pb-12 flex flex-col justify-between animate-slide-in-right shadow-2xl overflow-y-auto"
+          >
+            <div class="flex-grow pr-1">
+              <div
+                class="flex items-center justify-between mb-8 border-b border-brand-lightdark pb-4"
+              >
+                <span
+                  class="font-serif font-bold text-brand-gold tracking-widest text-xl"
+                  >OBSCURA</span
+                ><button
+                  class="text-neutral-500 hover:text-neutral-900 dark:text-brand-cream/60 dark:hover:text-brand-cream p-1 drawer-close"
+                >
+                  <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+              </div>
+              <div class="flex flex-col gap-1 mb-6">
+                <div class="flex flex-col">
+                  <button
+                    class="submenu-toggle text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors flex justify-between items-center text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >
+                    <span>Home</span
+                    ><i
+                      data-lucide="chevron-down"
+                      class="w-4 h-4 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="submenu-content pl-4 pr-2 py-1 flex flex-col gap-1 mt-1 border-l border-brand-gold/20 ml-5 hidden"
+                  >
+                    <a
+                      href="../index.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Home 1</a
+                    ><a
+                      href="home2.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Home 2</a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="shop.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Shop</a
+                ><a
+                  href="coffee-club.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors bg-brand-gold/15 text-brand-gold font-semibold"
+                  >Coffee Club</a
+                ><a
+                  href="contact.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Contact</a
+                ><a
+                  href="about-beans.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Beans Story</a
+                >
+                <div class="flex flex-col">
+                  <button
+                    class="submenu-toggle text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors flex justify-between items-center text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >
+                    <span>Dashboard</span
+                    ><i
+                      data-lucide="chevron-down"
+                      class="w-4 h-4 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="submenu-content pl-4 pr-2 py-1 flex flex-col gap-1 mt-1 border-l border-brand-gold/20 ml-5 hidden"
+                  >
+                    <a
+                      href="admin-dashboard.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Admin Dashboard</a
+                    ><a
+                      href="dashboard.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >User Dashboard</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-brand-lightdark pt-5 space-y-4">
+              <div class="flex gap-3">
+                <button
+                  title="Switch to RTL"
+                  class="flex-grow flex items-center justify-center py-2.5 rounded-xl border border-transparent hover:border-current focus:border-current text-sm font-bold uppercase tracking-wider transition-all bg-white/5 border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25"
+                >
+                  <span>RTL</span></button
+                ><button
+                  title="Switch to Light mode"
+                  class="flex-grow flex items-center justify-center py-2.5 rounded-xl border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold"
+                >
+                  <i data-lucide="sun" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <a
+                href="login.html"
+                class="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-brand-darkgold to-brand-gold text-brand-espresso font-bold uppercase tracking-widest text-xs rounded-full py-3.5 hover:brightness-110 transition-all shadow-md shadow-brand-gold/20 mobile-login-btn"
+                ><i data-lucide="user" class="w-4 h-4"></i
+                ><span>Sign In</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <main class="flex-grow">
+          <div class="space-y-12 pb-12 animate-fade-in-up">
+            <section
+              class="relative py-16 sm:py-20 bg-zinc-950 text-white overflow-hidden flex items-center"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center opacity-20"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;w=1600&amp;q=80&quot;);
+                "
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-espresso to-transparent"
+              ></div>
+              <div
+                class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-brand-espresso/40 to-transparent"
+              ></div>
+              <div
+                class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-6"
+              >
+                <span
+                  class="inline-block text-xs font-bold uppercase tracking-widest text-brand-gold bg-brand-gold/15 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 px-4 py-1.5 rounded-full"
+                  >The Roast Reserve Club</span
+                >
+                <h1
+                  class="text-4xl sm:text-6xl font-bold font-serif leading-tight max-w-2xl"
+                >
+                  Elevate Your <span class="text-brand-gold">Daily</span> Ritual
+                </h1>
+                <p
+                  class="text-brand-latte/80 text-sm sm:text-lg max-w-xl leading-relaxed"
+                >
+                  Freshly roasted specialty coffee — custom formulated for your
+                  preferred brew method — delivered directly to your door. Save
+                  up to 10% and skip any time.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                  <button
+                    class="bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all shadow-lg active:scale-95"
+                  >
+                    Build My Plan</button
+                  ><button
+                    class="bg-transparent hover:bg-white/10 text-white border border-transparent hover:border-white/20 focus:border-white/20 text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all active:scale-95"
+                  >
+                    See Member Perks
+                  </button>
+                </div>
+                <div class="flex flex-wrap gap-8 text-sm text-zinc-400 pt-4">
+                  <div>
+                    <span class="block text-2xl font-bold text-white">10%</span
+                    >Max Club Discount
+                  </div>
+                  <div>
+                    <span class="block text-2xl font-bold text-white">Free</span
+                    >Carbon Shipping
+                  </div>
+                  <div>
+                    <span class="block text-2xl font-bold text-white">0</span
+                    >Lock-In Contracts
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+              <div
+                id="club-builder"
+                class="text-center space-y-3 max-w-2xl mx-auto scroll-mt-24"
+              >
+                <span
+                  class="text-[10px] uppercase font-bold tracking-widest text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full"
+                  >The Roast Reserve Club</span
+                >
+                <h2 class="text-4xl font-serif font-bold text-brand-cream">
+                  Custom Coffee Subscription
+                </h2>
+                <p class="text-brand-latte/75 text-sm">
+                  Select your roast, grind, bag size, and schedule. We roast to
+                  order on Mondays and ship carbon-neutral on Tuesdays.
+                  Subscriptions enjoy up to 10% off and free shipping.
+                </p>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 space-y-8">
+                  <div
+                    class="bg-brand-medium/40 border border-transparent hover:border-neutral-900 focus:border-neutral-900 rounded-3xl p-6 sm:p-8 space-y-6"
+                  >
+                    <div
+                      class="flex items-center space-x-3 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900 pb-4"
+                    >
+                      <span
+                        class="w-8 h-8 rounded-full bg-brand-gold/15 text-brand-gold flex items-center justify-center font-bold text-sm"
+                        >1</span
+                      >
+                      <h3
+                        class="text-lg font-serif font-bold text-brand-cream flex items-center"
+                      >
+                        <i
+                          data-lucide="flame"
+                          class="w-5 h-5 mr-2 text-brand-gold"
+                        ></i>
+                        Select Roast Style
+                      </h3>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                      <button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <span class="text-sm font-semibold block"
+                          >Light</span
+                        ></button
+                      ><button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-gold/10 border-transparent hover:border-brand-gold focus:border-brand-gold text-brand-gold"
+                      >
+                        <span class="text-sm font-semibold block"
+                          >Medium</span
+                        ></button
+                      ><button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <span class="text-sm font-semibold block"
+                          >Dark</span
+                        ></button
+                      ><button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <span class="text-sm font-semibold block"
+                          >Signature Blend</span
+                        >
+                      </button>
+                    </div>
+                    <div
+                      class="bg-brand-espresso/70 border border-transparent hover:border-neutral-855 focus:border-neutral-855 rounded-xl p-5 flex flex-col sm:flex-row items-center sm:space-x-5 gap-4"
+                    >
+                      <div
+                        class="w-14 h-14 rounded-full bg-[#7f5539] border border-transparent hover:border-neutral-900/60 focus:border-neutral-900/60 shrink-0 shadow-lg flex items-center justify-center"
+                      >
+                        <i
+                          data-lucide="coffee"
+                          class="w-5 h-5 text-brand-cream"
+                        ></i>
+                      </div>
+                      <div class="space-y-1 text-center sm:text-left">
+                        <h4 class="text-sm font-bold text-brand-cream">
+                          Medium Roast (Full City)
+                        </h4>
+                        <p class="text-xs text-brand-latte/70 leading-relaxed">
+                          Perfect balance of body and acidity. Deep caramel
+                          sweetness, toasted pecans, and red apple compounds.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/40 border border-transparent hover:border-neutral-900 focus:border-neutral-900 rounded-3xl p-6 sm:p-8 space-y-6"
+                  >
+                    <div
+                      class="flex items-center space-x-3 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900 pb-4"
+                    >
+                      <span
+                        class="w-8 h-8 rounded-full bg-brand-gold/15 text-brand-gold flex items-center justify-center font-bold text-sm"
+                        >2</span
+                      >
+                      <h3
+                        class="text-lg font-serif font-bold text-brand-cream flex items-center"
+                      >
+                        <i
+                          data-lucide="coffee"
+                          class="w-5 h-5 mr-2 text-brand-gold"
+                        ></i>
+                        Choose Volume / Bag Size
+                      </h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      <button
+                        class="p-5 rounded-xl border border-transparent hover:border-current focus:border-current text-left transition-all flex flex-col justify-between min-h-[110px] bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <div>
+                          <span class="text-lg font-bold block">250g</span
+                          ><span class="text-xs text-brand-cream/80 mt-1 block"
+                            >Approx. 15 Cups</span
+                          >
+                        </div>
+                        <span
+                          class="text-[10px] text-neutral-500 mt-2 block leading-none"
+                          >Perfect for single coffee drinkers</span
+                        ></button
+                      ><button
+                        class="p-5 rounded-xl border border-transparent hover:border-current focus:border-current text-left transition-all flex flex-col justify-between min-h-[110px] bg-brand-gold/10 border-transparent hover:border-brand-gold focus:border-brand-gold text-brand-gold"
+                      >
+                        <div>
+                          <span class="text-lg font-bold block">500g</span
+                          ><span class="text-xs text-brand-cream/80 mt-1 block"
+                            >Approx. 30 Cups</span
+                          >
+                        </div>
+                        <span
+                          class="text-[10px] text-neutral-500 mt-2 block leading-none"
+                          >Recommended for couples / daily drinkers</span
+                        ></button
+                      ><button
+                        class="p-5 rounded-xl border border-transparent hover:border-current focus:border-current text-left transition-all flex flex-col justify-between min-h-[110px] bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <div>
+                          <span class="text-lg font-bold block">1kg</span
+                          ><span class="text-xs text-brand-cream/80 mt-1 block"
+                            >Approx. 60 Cups</span
+                          >
+                        </div>
+                        <span
+                          class="text-[10px] text-neutral-500 mt-2 block leading-none"
+                          >Great for heavy drinkers and families</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/40 border border-transparent hover:border-neutral-900 focus:border-neutral-900 rounded-3xl p-6 sm:p-8 space-y-6"
+                  >
+                    <div
+                      class="flex items-center space-x-3 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900 pb-4"
+                    >
+                      <span
+                        class="w-8 h-8 rounded-full bg-brand-gold/15 text-brand-gold flex items-center justify-center font-bold text-sm"
+                        >3</span
+                      >
+                      <h3
+                        class="text-lg font-serif font-bold text-brand-cream flex items-center"
+                      >
+                        <i
+                          data-lucide="sliders-vertical"
+                          class="w-5 h-5 mr-2 text-brand-gold"
+                        ></i>
+                        Select Grind Requirement
+                      </h3>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                      <button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-gold/10 border-transparent hover:border-brand-gold focus:border-brand-gold text-brand-gold"
+                      >
+                        <span class="text-sm font-semibold block"
+                          >Whole Bean</span
+                        ><span
+                          class="text-[10px] text-neutral-500 mt-1 block leading-none"
+                          >Keep fresh longer</span
+                        ></button
+                      ><button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <span class="text-sm font-semibold block">Espresso</span
+                        ><span
+                          class="text-[10px] text-neutral-500 mt-1 block leading-none"
+                          >Super fine grind</span
+                        ></button
+                      ><button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <span class="text-sm font-semibold block">Drip</span
+                        ><span
+                          class="text-[10px] text-neutral-500 mt-1 block leading-none"
+                          >Standard filter grind</span
+                        ></button
+                      ><button
+                        class="p-4 rounded-xl border border-transparent hover:border-current focus:border-current text-center transition-all bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <span class="text-sm font-semibold block"
+                          >French Press</span
+                        ><span
+                          class="text-[10px] text-neutral-500 mt-1 block leading-none"
+                          >Coarse grind</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/40 border border-transparent hover:border-neutral-900 focus:border-neutral-900 rounded-3xl p-6 sm:p-8 space-y-6"
+                  >
+                    <div
+                      class="flex items-center space-x-3 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900 pb-4"
+                    >
+                      <span
+                        class="w-8 h-8 rounded-full bg-brand-gold/15 text-brand-gold flex items-center justify-center font-bold text-sm"
+                        >4</span
+                      >
+                      <h3
+                        class="text-lg font-serif font-bold text-brand-cream flex items-center"
+                      >
+                        <i
+                          data-lucide="calendar"
+                          class="w-5 h-5 mr-2 text-brand-gold"
+                        ></i>
+                        Delivery Schedule
+                      </h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      <button
+                        class="p-5 rounded-xl border border-transparent hover:border-current focus:border-current text-left transition-all flex flex-col justify-between min-h-[110px] bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <div>
+                          <span class="text-base font-bold block"
+                            >Every Week</span
+                          ><span
+                            class="text-xs text-brand-gold/80 mt-1 block font-mono"
+                            >10% Club Discount</span
+                          >
+                        </div>
+                        <span
+                          class="text-[10px] text-neutral-500 mt-2 block leading-none"
+                          >Free carbon-neutral shipping</span
+                        ></button
+                      ><button
+                        class="p-5 rounded-xl border border-transparent hover:border-current focus:border-current text-left transition-all flex flex-col justify-between min-h-[110px] bg-brand-gold/10 border-transparent hover:border-brand-gold focus:border-brand-gold text-brand-gold"
+                      >
+                        <div>
+                          <span class="text-base font-bold block"
+                            >Every 2 Weeks</span
+                          ><span
+                            class="text-xs text-brand-gold/80 mt-1 block font-mono"
+                            >5% Club Discount</span
+                          >
+                        </div>
+                        <span
+                          class="text-[10px] text-neutral-500 mt-2 block leading-none"
+                          >Free carbon-neutral shipping</span
+                        ></button
+                      ><button
+                        class="p-5 rounded-xl border border-transparent hover:border-current focus:border-current text-left transition-all flex flex-col justify-between min-h-[110px] bg-brand-espresso/50 border-transparent focus:border-neutral-850 text-brand-cream/80 hover:border-neutral-800"
+                      >
+                        <div>
+                          <span class="text-base font-bold block"
+                            >Every Month</span
+                          ><span
+                            class="text-xs text-brand-gold/80 mt-1 block font-mono"
+                            >Standard Price</span
+                          >
+                        </div>
+                        <span
+                          class="text-[10px] text-neutral-500 mt-2 block leading-none"
+                          >Free carbon-neutral shipping</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:col-span-4 sticky top-24 space-y-6">
+                  <div
+                    class="rounded-3xl glass-panel border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 p-6 sm:p-8 space-y-6 shadow-xl"
+                  >
+                    <h3 class="text-xl font-serif font-bold text-brand-cream">
+                      Plan Summary
+                    </h3>
+                    <div class="space-y-4">
+                      <div
+                        class="flex justify-between border-b border-transparent hover:border-neutral-900/60 focus:border-neutral-900/60 pb-3"
+                      >
+                        <span class="text-xs text-neutral-400"
+                          >Roast Profile</span
+                        ><span class="text-xs font-semibold text-brand-cream"
+                          >Medium</span
+                        >
+                      </div>
+                      <div
+                        class="flex justify-between border-b border-transparent hover:border-neutral-900/60 focus:border-neutral-900/60 pb-3"
+                      >
+                        <span class="text-xs text-neutral-400">Bag Volume</span
+                        ><span class="text-xs font-semibold text-brand-cream"
+                          >500g</span
+                        >
+                      </div>
+                      <div
+                        class="flex justify-between border-b border-transparent hover:border-neutral-900/60 focus:border-neutral-900/60 pb-3"
+                      >
+                        <span class="text-xs text-neutral-400">Grind Style</span
+                        ><span class="text-xs font-semibold text-brand-cream"
+                          >Whole Bean</span
+                        >
+                      </div>
+                      <div
+                        class="flex justify-between border-b border-transparent hover:border-neutral-900/60 focus:border-neutral-900/60 pb-3"
+                      >
+                        <span class="text-xs text-neutral-400">Frequency</span
+                        ><span class="text-xs font-semibold text-brand-cream"
+                          >Every 2 Weeks</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="bg-brand-espresso/50 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-2xl p-4.5 space-y-2.5"
+                    >
+                      <div
+                        class="flex justify-between text-xs text-emerald-400"
+                      >
+                        <span>Frequency Discount</span><span>-$1.75</span>
+                      </div>
+                      <div
+                        class="flex justify-between text-xs text-neutral-400"
+                      >
+                        <span>Shipping</span
+                        ><span
+                          class="text-emerald-400 font-bold uppercase tracking-wider"
+                          >Free</span
+                        >
+                      </div>
+                      <div class="h-px bg-neutral-850 my-1"></div>
+                      <div class="flex justify-between items-baseline">
+                        <span class="text-sm font-semibold text-brand-cream"
+                          >Price/Shipment</span
+                        >
+                        <div class="text-right">
+                          <span
+                            class="text-2xl font-serif font-bold text-brand-gold"
+                            >$33.25</span
+                          ><span class="text-[10px] text-neutral-500 block"
+                            >USD + tax</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="w-full bg-gradient-to-r from-brand-darkgold to-brand-gold text-brand-espresso font-semibold uppercase tracking-wider text-sm py-4 rounded-xl hover:brightness-110 active:scale-95 transition-all shadow-lg flex items-center justify-center"
+                    >
+                      Subscribe Now
+                      <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                  </div>
+                  <div
+                    class="rounded-2xl bg-brand-medium/20 border border-transparent hover:border-neutral-900 focus:border-neutral-900 p-5 flex items-start space-x-3 text-xs"
+                  >
+                    <i
+                      data-lucide="shield-check"
+                      class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"
+                    ></i>
+                    <div class="space-y-1">
+                      <h4 class="font-bold text-brand-cream">
+                        No-Lock Commitment
+                      </h4>
+                      <p class="text-brand-latte/70 leading-relaxed">
+                        Pause, modify frequency, change grind sizes, or cancel
+                        your subscription plan at any time directly in your
+                        dashboard. Zero fees.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-t border-transparent hover:border-neutral-900 focus:border-neutral-900 pt-16 space-y-10"
+              >
+                <div class="text-center space-y-2">
+                  <span
+                    class="text-xs uppercase tracking-widest text-brand-gold font-bold"
+                    >The Routine</span
+                  >
+                  <h3 class="text-3xl font-serif font-bold text-brand-cream">
+                    How the Club Works
+                  </h3>
+                  <p class="text-brand-latte/75 text-sm max-w-lg mx-auto">
+                    From green sorting to delivery, we operate a tight schedule
+                    to ensure freshness.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3 relative overflow-hidden"
+                  >
+                    <span
+                      class="absolute right-4 top-2 text-6xl font-serif font-extrabold text-neutral-800/20 select-none"
+                      >01</span
+                    >
+                    <h4
+                      class="text-sm font-bold text-brand-cream relative z-10"
+                    >
+                      Customize Plan
+                    </h4>
+                    <p
+                      class="text-xs text-brand-latte/70 leading-relaxed relative z-10"
+                    >
+                      Choose your preferred roast profiles, bag sizes, and
+                      frequency settings. Change them whenever your taste
+                      shifts.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3 relative overflow-hidden"
+                  >
+                    <span
+                      class="absolute right-4 top-2 text-6xl font-serif font-extrabold text-neutral-800/20 select-none"
+                      >02</span
+                    >
+                    <h4
+                      class="text-sm font-bold text-brand-cream relative z-10"
+                    >
+                      Roasted Fresh on Mondays
+                    </h4>
+                    <p
+                      class="text-xs text-brand-latte/70 leading-relaxed relative z-10"
+                    >
+                      We batch roast all subscription beans on Mondays utilizing
+                      precise thermal profile logs.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3 relative overflow-hidden"
+                  >
+                    <span
+                      class="absolute right-4 top-2 text-6xl font-serif font-extrabold text-neutral-800/20 select-none"
+                      >03</span
+                    >
+                    <h4
+                      class="text-sm font-bold text-brand-cream relative z-10"
+                    >
+                      Shipped on Tuesdays
+                    </h4>
+                    <p
+                      class="text-xs text-brand-latte/70 leading-relaxed relative z-10"
+                    >
+                      Your beans are immediately packaged and shipped out on
+                      Tuesdays to secure peak flavor.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3 relative overflow-hidden"
+                  >
+                    <span
+                      class="absolute right-4 top-2 text-6xl font-serif font-extrabold text-neutral-800/20 select-none"
+                      >04</span
+                    >
+                    <h4
+                      class="text-sm font-bold text-brand-cream relative z-10"
+                    >
+                      Manage in Dashboard
+                    </h4>
+                    <p
+                      class="text-xs text-brand-latte/70 leading-relaxed relative z-10"
+                    >
+                      Pause, skip cycles, or change shipping dates directly
+                      inside your account panel with zero fees.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="club-perks"
+                class="bg-brand-medium/40 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-8 space-y-8 scroll-mt-24"
+              >
+                <div class="text-center space-y-1">
+                  <span
+                    class="text-xs uppercase tracking-widest text-brand-gold font-bold"
+                    >Member Privileges</span
+                  >
+                  <h3 class="text-2xl font-serif font-bold text-brand-cream">
+                    Subscriber Exclusive Perks
+                  </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div
+                    class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-5 rounded-2xl space-y-4 flex flex-col justify-between"
+                  >
+                    <div class="space-y-4">
+                      <img
+                        alt="Save up to 10%"
+                        class="w-full h-40 object-cover rounded-xl border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                        src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;q=80&amp;w=400"
+                      />
+                      <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-brand-cream">
+                          Save up to 10%
+                        </h4>
+                        <p class="text-xs text-brand-latte/70 leading-relaxed">
+                          Every subscription bag comes with an automatic 10%
+                          discount off standard retail pricing, ensuring the
+                          best price for micro-lot roasts.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-5 rounded-2xl space-y-4 flex flex-col justify-between"
+                  >
+                    <div class="space-y-4">
+                      <img
+                        alt="Free Carbon-Neutral Shipping"
+                        class="w-full h-40 object-cover rounded-xl border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;q=80&amp;w=400"
+                      />
+                      <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-brand-cream">
+                          Free Carbon-Neutral Shipping
+                        </h4>
+                        <p class="text-xs text-brand-latte/70 leading-relaxed">
+                          All orders are dispatched via carbon-neutral transit
+                          partners, fully offset through certified reforestation
+                          projects, at absolutely no cost to you.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-5 rounded-2xl space-y-4 flex flex-col justify-between"
+                  >
+                    <div class="space-y-4">
+                      <img
+                        alt="Micro-Lot Early Access"
+                        class="w-full h-40 object-cover rounded-xl border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                        src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&amp;fit=crop&amp;q=80&amp;w=400"
+                      />
+                      <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-brand-cream">
+                          Micro-Lot Early Access
+                        </h4>
+                        <p class="text-xs text-brand-latte/70 leading-relaxed">
+                          Get exclusive first-access to rare single-origins,
+                          private farm lots, and seasonal reserve blends before
+                          they go live on our public storefront.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-3xl mx-auto space-y-8">
+                <div class="text-center space-y-1">
+                  <span
+                    class="text-xs uppercase tracking-widest text-brand-gold font-bold"
+                    >FAQ</span
+                  >
+                  <h3 class="text-2xl font-serif font-bold text-brand-cream">
+                    Subscription FAQ
+                  </h3>
+                </div>
+                <div class="space-y-4">
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-2xl overflow-hidden transition-all duration-300"
+                  >
+                    <button
+                      class="w-full text-left p-5 flex items-center justify-between text-brand-cream hover:text-brand-gold font-semibold text-sm transition-colors outline-none"
+                    >
+                      <span class="flex items-center gap-2"
+                        ><i
+                          data-lucide="circle-question-mark"
+                          class="w-4 h-4 text-brand-gold shrink-0"
+                        ></i
+                        >Can I skip, pause, or cancel my subscription?</span
+                      ><i
+                        data-lucide="chevron-down"
+                        class="w-4 h-4 text-brand-gold shrink-0 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div
+                      class="transition-all duration-300 ease-in-out max-h-0 p-0 overflow-hidden"
+                    >
+                      <p class="text-xs text-brand-latte/75 leading-relaxed">
+                        Yes, absolutely! You can manage every detail of your
+                        subscription plan inside your Obscura Member Dashboard.
+                        You can skip upcoming deliveries, pause the
+                        subscription, or cancel it entirely with zero
+                        cancellation fees.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-2xl overflow-hidden transition-all duration-300"
+                  >
+                    <button
+                      class="w-full text-left p-5 flex items-center justify-between text-brand-cream hover:text-brand-gold font-semibold text-sm transition-colors outline-none"
+                    >
+                      <span class="flex items-center gap-2"
+                        ><i
+                          data-lucide="circle-question-mark"
+                          class="w-4 h-4 text-brand-gold shrink-0"
+                        ></i
+                        >How fresh will my coffee be when it arrives?</span
+                      ><i
+                        data-lucide="chevron-down"
+                        class="w-4 h-4 text-brand-gold shrink-0 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div
+                      class="transition-all duration-300 ease-in-out max-h-0 p-0 overflow-hidden"
+                    >
+                      <p class="text-xs text-brand-latte/75 leading-relaxed">
+                        We roast all subscription lots on Mondays and ship them
+                        on Tuesdays. Depending on your location, your package
+                        will arrive 2–4 days after roasting, which is the
+                        perfect duration for the beans to degas and reach
+                        optimal brewing maturity.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-2xl overflow-hidden transition-all duration-300"
+                  >
+                    <button
+                      class="w-full text-left p-5 flex items-center justify-between text-brand-cream hover:text-brand-gold font-semibold text-sm transition-colors outline-none"
+                    >
+                      <span class="flex items-center gap-2"
+                        ><i
+                          data-lucide="circle-question-mark"
+                          class="w-4 h-4 text-brand-gold shrink-0"
+                        ></i
+                        >Can I change my roast style or grind setting
+                        later?</span
+                      ><i
+                        data-lucide="chevron-down"
+                        class="w-4 h-4 text-brand-gold shrink-0 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div
+                      class="transition-all duration-300 ease-in-out max-h-0 p-0 overflow-hidden"
+                    >
+                      <p class="text-xs text-brand-latte/75 leading-relaxed">
+                        Yes. If you want to switch from Medium Roast to Light
+                        Roast, or transition from Whole Bean to Drip grind, you
+                        can make these edits with a single click in your account
+                        settings before the next weekly roast cycle begins.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-2xl overflow-hidden transition-all duration-300"
+                  >
+                    <button
+                      class="w-full text-left p-5 flex items-center justify-between text-brand-cream hover:text-brand-gold font-semibold text-sm transition-colors outline-none"
+                    >
+                      <span class="flex items-center gap-2"
+                        ><i
+                          data-lucide="circle-question-mark"
+                          class="w-4 h-4 text-brand-gold shrink-0"
+                        ></i
+                        >Is shipping really free on every package?</span
+                      ><i
+                        data-lucide="chevron-down"
+                        class="w-4 h-4 text-brand-gold shrink-0 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div
+                      class="transition-all duration-300 ease-in-out max-h-0 p-0 overflow-hidden"
+                    >
+                      <p class="text-xs text-brand-latte/75 leading-relaxed">
+                        Yes, standard shipping is completely free for all active
+                        subscription levels. Additionally, we flush all bags
+                        with food-grade nitrogen to maintain freshness and
+                        offset the shipping footprint via certified carbon
+                        capture projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="bg-brand-espresso border-t border-transparent hover:border-neutral-900 focus:border-neutral-900 pt-16 pb-8"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900"
+            >
+              <div class="md:col-span-4 space-y-5">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="w-8 h-8 rounded-lg bg-brand-gold flex items-center justify-center"
+                  >
+                    <i
+                      data-lucide="coffee"
+                      class="w-4.5 h-4.5 text-brand-espresso"
+                    ></i>
+                  </div>
+                  <span
+                    class="font-serif font-bold tracking-widest text-brand-cream text-lg"
+                    >OBSCURA</span
+                  >
+                </div>
+                <p class="text-sm text-brand-latte/70 leading-relaxed max-w-sm">
+                  We source single-origin micro-lots directly from remote farms.
+                  Roasted in micro-batches with meticulous temperature curves to
+                  unlock the true terroir of each bean.
+                </p>
+                <p class="text-xs text-brand-gold font-sans font-semibold">
+                  ROASTED FRESH IN SEATTLE, WA
+                </p>
+              </div>
+              <div class="md:col-span-2 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Explore
+                </h4>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      href="shop.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Shop Catalog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="coffee-club.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Coffee Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="about-beans.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Seed-to-Cup Journey</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-2 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Support
+                </h4>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Roastery FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="comingsoon.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Shipping &amp; Returns</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-4 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Stay Roasted
+                </h4>
+                <p class="text-sm text-brand-latte/70">
+                  Subscribe to receive micro-lot releases, roast dates, and
+                  professional brewing guides.
+                </p>
+                <form class="relative mt-2">
+                  <input
+                    required=""
+                    placeholder="Enter your email"
+                    class="w-full bg-brand-medium border border-transparent hover:border-neutral-800 rounded-lg py-3 pl-4 pr-12 text-sm text-brand-cream placeholder-neutral-500 outline-none focus:border-brand-gold/50"
+                    type="email"
+                    value=""
+                  /><button
+                    type="submit"
+                    class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-brand-gold hover:bg-brand-gold/85 text-brand-espresso p-1.5 rounded-md transition-colors"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-latte/50"
+            >
+              <p>
+                © 2026 Obscura Coffee Roasters. Crafted with premium terroir.
+              </p>
+              <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Privacy Policy</a
+                ><a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Terms of Service</a
+                ><a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Sitemap</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="../js/theme.js?v=1781245913707" defer=""></script>
+    <script src="../js/rtl.js?v=1781245913707" defer=""></script>
+    <script src="../js/navigation.js?v=1781245913707" defer=""></script>
+  </body>
+</html>

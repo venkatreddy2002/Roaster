@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en" class="dark" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obscura Coffee Roasters | Specialty Micro-Lot Sourcing</title>
+    <meta
+      name="description"
+      content="Obscura Coffee Roasters sources high-altitude single origin micro-lots directly from remote farms and roasts them in Seattle, WA. Join the subscription club today."
+    />
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme");
+          if (theme === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+          const rtl = localStorage.getItem("rtl") === "true";
+          if (rtl) {
+            document.documentElement.setAttribute("dir", "rtl");
+          } else {
+            document.documentElement.setAttribute("dir", "ltr");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="../css/global.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/theme.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/rtl.css?v=1781245913707" />
+    <script src="./assets/app.js?v=1781245878214" defer=""></script>
+  </head>
+  <body class="bg-[#0b0908]">
+    <div id="root">
+      <div
+        class="min-h-screen bg-brand-espresso text-brand-cream flex flex-col font-sans antialiased selection:bg-brand-gold/30"
+      >
+        <header
+          class="w-full border-b border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80 bg-brand-espresso/80 backdrop-blur-md sticky top-0 z-40"
+        >
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4"
+          >
+            <div class="flex items-center gap-3">
+              <button
+                class="md:hidden w-9 h-9 rounded-xl flex items-center justify-center bg-white/10 hover:bg-white/20 text-white active:scale-95 transition-all border border-transparent hover:border-white/5 focus:border-white/5 dashboard-menu-btn"
+                aria-label="Open Navigation"
+              >
+                <i
+                  data-lucide="menu"
+                  class="w-4.5 h-4.5 text-brand-gold"
+                ></i></button
+              ><a
+                href="../index.html"
+                class="flex items-center gap-2.5 group shrink-0 cursor-pointer"
+                ><div
+                  class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-darkgold to-brand-gold flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"
+                >
+                  <i
+                    data-lucide="coffee"
+                    class="w-4 h-4 text-brand-espresso"
+                  ></i>
+                </div>
+                <div class="text-left leading-none hidden sm:block">
+                  <span
+                    class="block text-base font-bold tracking-widest text-brand-gold font-serif"
+                    >OBSCURA</span
+                  ><span
+                    class="block text-[9px] uppercase tracking-widest text-brand-gold/70"
+                    >Coffee Roasters</span
+                  >
+                </div>
+                <span
+                  class="sm:hidden text-base font-bold tracking-widest text-brand-gold font-serif"
+                  >OBSCURA</span
+                ></a
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="hidden md:flex items-center gap-2">
+                <button
+                  title="Switch to RTL"
+                  class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all duration-300 bg-brand-medium/40 border-transparent focus:border-neutral-700/60 text-brand-cream/50 hover:text-brand-cream hover:border-neutral-600"
+                >
+                  <span class="transition-all duration-300">RTL</span></button
+                ><button
+                  title="Switch to Light mode"
+                  class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all duration-300 bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold"
+                >
+                  <i data-lucide="sun" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="flex-grow">
+          <div class="max-w-7xl mx-auto px-6 py-6 md:py-8 animate-fade-in-up">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+              <div
+                class="hidden md:flex w-60 shrink-0 flex-col md:sticky md:top-[5.5rem] md:self-start border border-transparent hover:border-zinc-800 focus:border-zinc-800 rounded-2xl overflow-hidden bg-brand-espresso/40"
+              >
+                <div
+                  class="bg-brand-espresso/70 p-4 py-5 text-center flex flex-col items-center border-b border-transparent hover:border-zinc-800 focus:border-zinc-800"
+                >
+                  <div
+                    class="w-14 h-14 bg-brand-gold/15 text-brand-gold flex items-center justify-center text-xl font-bold font-serif mb-3 rounded-full"
+                  >
+                    C
+                  </div>
+                  <h4
+                    class="text-white font-serif font-bold text-base leading-snug"
+                  >
+                    Coffee Enthusiast
+                  </h4>
+                  <span
+                    class="text-[10px] text-brand-gold uppercase tracking-widest font-bold mt-1"
+                    >Obscura Member</span
+                  >
+                  <div class="flex justify-around w-full text-xs mt-3">
+                    <div class="text-center">
+                      <span
+                        class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                        >Points</span
+                      ><span class="font-bold text-white font-mono">3210</span>
+                    </div>
+                    <div class="text-center">
+                      <span
+                        class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                        >Orders</span
+                      ><span class="font-bold text-white font-mono">5</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col w-full bg-brand-espresso/40 p-1.5 space-y-0.5"
+                >
+                  <a
+                    href="dashboard.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all w-full text-left whitespace-nowrap rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="user" class="w-4 h-4"></i
+                    ><span>Overview</span></a
+                  ><a
+                    href="orders.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all w-full text-left whitespace-nowrap rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i
+                    ><span>Order History</span></a
+                  ><a
+                    href="favorites.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all w-full text-left whitespace-nowrap rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="heart" class="w-4 h-4"></i
+                    ><span>Saved Favorites</span>
+                  </a>
+                  <div class="h-px bg-zinc-800/50 my-1"></div>
+                  <a
+                    href="../index.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-white hover:bg-white/5 transition-all whitespace-nowrap w-full text-left rounded-xl"
+                  >
+                    <i data-lucide="log-out" class="w-4 h-4 -rotate-180"></i
+                    ><span>Back to Store</span></a
+                  >
+                  <a
+                    href="user-settings.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap w-full text-left rounded-xl bg-brand-gold text-brand-espresso"
+                  >
+                    <i data-lucide="settings" class="w-4 h-4"></i
+                    ><span>Settings</span></a
+                  ><a
+                    href="../index.html"
+                    class="flex items-center gap-3 px-4 py-2 text-xs font-bold uppercase tracking-wider text-red-400 hover:bg-red-950/30 hover:text-red-300 transition-all whitespace-nowrap w-full text-left rounded-xl text-zinc-400 hover:text-white hover:bg-white/5"
+                  >
+                    <i data-lucide="log-out" class="w-4 h-4"></i
+                    ><span>Sign Out</span>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="dashboard-drawer"
+                class="fixed inset-0 z-50 flex md:hidden hidden"
+              >
+                <div
+                  class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 dashboard-drawer-backdrop"
+                ></div>
+                <div
+                  class="relative flex-1 flex flex-col max-w-xs w-full bg-brand-espresso border-r border-transparent hover:border-zinc-800 focus:border-zinc-800 animate-slide-in-left p-6"
+                >
+                  <div
+                    class="absolute top-4 right-4 z-10 flex items-center gap-2"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full flex items-center justify-center bg-white/5 text-neutral-450 hover:text-white border border-transparent hover:border-white/5 focus:border-white/5 dashboard-drawer-close"
+                    >
+                      <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                  </div>
+                  <div
+                    class="flex-1 flex flex-col overflow-y-auto scrollbar-none pt-8"
+                  >
+                    <div
+                      class="p-4 text-center flex flex-col items-center border-b border-transparent hover:border-zinc-800/60 focus:border-zinc-800/60"
+                    >
+                      <div
+                        class="w-14 h-14 bg-brand-gold/15 text-brand-gold flex items-center justify-center text-xl font-bold font-serif mb-3 rounded-full"
+                      >
+                        C
+                      </div>
+                      <h4
+                        class="text-white font-serif font-bold text-base leading-snug"
+                      >
+                        Coffee Enthusiast
+                      </h4>
+                      <span
+                        class="text-[10px] text-brand-gold uppercase tracking-widest font-bold mt-1"
+                        >Obscura Member</span
+                      >
+                      <div class="flex justify-around w-full text-xs mt-4">
+                        <div class="text-center">
+                          <span
+                            class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                            >Points</span
+                          ><span class="font-bold text-white font-mono"
+                            >3210</span
+                          >
+                        </div>
+                        <div class="text-center">
+                          <span
+                            class="block text-zinc-500 font-bold uppercase tracking-wider text-[9px]"
+                            >Orders</span
+                          ><span class="font-bold text-white font-mono">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col w-full mt-4">
+                      <a
+                        href="dashboard.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="user" class="w-4 h-4"></i
+                        ><span>Overview</span></a
+                      ><a
+                        href="orders.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i
+                        ><span>Order History</span></a
+                      ><a
+                        href="favorites.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="heart" class="w-4 h-4"></i
+                        ><span>Saved Favorites</span></a
+                      ><a
+                        href="coffee-club.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 text-zinc-400 hover:text-white hover:bg-white/5"
+                        ><i data-lucide="coffee" class="w-4 h-4"></i
+                        ><span>Coffee Club</span></a
+                      >
+                      <a
+                        href="user-settings.html"
+                        class="flex items-center gap-3 px-4 py-3 text-xs font-bold uppercase tracking-wider transition-colors w-full text-left rounded-xl mt-1 bg-brand-gold text-brand-espresso"
+                        ><i data-lucide="settings" class="w-4 h-4"></i
+                        ><span>Settings</span></a
+                      >
+                    </div>
+                    <div
+                      class="mt-6 border-t border-transparent hover:border-zinc-800 focus:border-zinc-800 pt-6 space-y-4"
+                    >
+                      <a
+                        href="../index.html"
+                        class="flex items-center gap-3 px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-red-500/80 hover:text-red-400 hover:bg-red-500/5 transition-colors rounded-xl w-full text-left text-zinc-400 hover:text-white hover:bg-white/5"
+                      >
+                        <i data-lucide="log-out" class="w-4 h-4"></i
+                        ><span>Sign Out</span>
+                      </a>
+                      <div class="flex gap-2">
+                        <button
+                          type="button"
+                          title="Switch to RTL"
+                          class="flex-grow flex items-center justify-center py-2 h-9 rounded-xl bg-white/5 border border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 text-xs font-bold uppercase tracking-wider transition-all"
+                        >
+                          <span>RTL</span></button
+                        ><button
+                          type="button"
+                          title="Switch to Light mode"
+                          class="flex-grow flex items-center justify-center py-2 h-9 rounded-xl bg-white/5 border border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 transition-all"
+                        >
+                          <i data-lucide="sun" class="w-4 h-4"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-grow w-full space-y-6 md:border-l md:border-zinc-200 md:dark:border-zinc-800/60 md:pl-8 rtl:md:border-l-0 rtl:md:border-r rtl:md:pl-0 rtl:md:pr-8"
+              >
+                <div
+                  class="border-b border-zinc-200 dark:border-zinc-800/60 pb-2 mb-6"
+                >
+                  <h2
+                    class="text-sm md:text-base font-bold uppercase tracking-widest text-brand-cream text-left"
+                  >
+                    Settings
+                  </h2>
+                </div>
+
+                <div
+                  class="bg-brand-medium/40 border border-transparent hover:border-zinc-800 focus:border-zinc-800 rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[70vh]"
+                >
+                  <!-- Left Sidebar Menu -->
+                  <div
+                    class="w-full md:w-64 border-b md:border-b-0 md:border-r border-zinc-800/60 p-4 flex flex-col rtl:md:border-r-0 rtl:md:border-l"
+                  >
+                    <div class="space-y-1 flex-1">
+                      <button
+                        class="w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5 text-white text-sm font-bold transition-colors text-left"
+                      >
+                        <i
+                          data-lucide="user"
+                          class="w-4 h-4 text-brand-gold"
+                        ></i>
+                        Profile Info
+                      </button>
+                      <button
+                        class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 text-sm font-bold transition-colors text-left"
+                      >
+                        <i data-lucide="bell" class="w-4 h-4"></i> Notifications
+                      </button>
+                      <button
+                        class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 text-sm font-bold transition-colors text-left"
+                      >
+                        <i data-lucide="shield" class="w-4 h-4"></i> Security
+                      </button>
+                      <button
+                        class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 text-sm font-bold transition-colors text-left"
+                      >
+                        <i data-lucide="globe" class="w-4 h-4"></i> Preferences
+                      </button>
+                      <button
+                        class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 text-sm font-bold transition-colors text-left"
+                      >
+                        <i data-lucide="credit-card" class="w-4 h-4"></i>
+                        Payment Methods
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Right Form Content -->
+                  <div class="flex-1 p-6 md:p-8 flex flex-col">
+                    <div class="w-full flex-1">
+                      <div
+                        class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8 border-b border-zinc-800/60 pb-6"
+                      >
+                        <div>
+                          <h3 class="text-xl font-serif font-bold text-white">
+                            Profile Information
+                          </h3>
+                          <p class="text-xs text-zinc-400 mt-1">
+                            Update your personal details and shipping address.
+                          </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                          <div class="text-right">
+                            <h4 class="text-sm font-bold text-white">
+                              Coffee Enthusiast
+                            </h4>
+                            <p
+                              class="text-[10px] text-brand-gold uppercase tracking-widest mt-0.5"
+                            >
+                              Obscura Member
+                            </p>
+                          </div>
+                          <div class="relative group">
+                            <div
+                              class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center text-xl font-serif font-bold text-brand-gold border-2 border-brand-gold/30 cursor-pointer overflow-hidden group-hover:border-brand-gold transition-colors"
+                            >
+                              C
+                              <div
+                                class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                              >
+                                <i
+                                  data-lucide="camera"
+                                  class="w-5 h-5 text-white"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <form
+                        class="space-y-6 max-w-3xl"
+                        onsubmit="event.preventDefault()"
+                      >
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                          <div class="space-y-1.5">
+                            <label
+                              class="text-[10px] text-zinc-500 uppercase tracking-widest block font-bold"
+                              >First Name</label
+                            >
+                            <div class="relative">
+                              <i
+                                data-lucide="user"
+                                class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 pointer-events-none"
+                              ></i>
+                              <input
+                                type="text"
+                                value="Coffee"
+                                class="w-full bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 focus:border-brand-gold/50 rounded-xl pl-11 pr-4 py-2.5 text-sm text-white focus:outline-none transition-colors shadow-inner"
+                              />
+                            </div>
+                          </div>
+                          <div class="space-y-1.5">
+                            <label
+                              class="text-[10px] text-zinc-500 uppercase tracking-widest block font-bold"
+                              >Last Name</label
+                            >
+                            <div class="relative">
+                              <i
+                                data-lucide="user"
+                                class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 pointer-events-none"
+                              ></i>
+                              <input
+                                type="text"
+                                value="Enthusiast"
+                                class="w-full bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 focus:border-brand-gold/50 rounded-xl pl-11 pr-4 py-2.5 text-sm text-white focus:outline-none transition-colors shadow-inner"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                          <div class="space-y-1.5">
+                            <label
+                              class="text-[10px] text-zinc-500 uppercase tracking-widest block font-bold"
+                              >Email Address</label
+                            >
+                            <div class="relative">
+                              <i
+                                data-lucide="mail"
+                                class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 pointer-events-none"
+                              ></i>
+                              <input
+                                type="email"
+                                value="member@example.com"
+                                class="w-full bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 focus:border-brand-gold/50 rounded-xl pl-11 pr-4 py-2.5 text-sm text-white focus:outline-none transition-colors shadow-inner"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="space-y-1.5">
+                            <label
+                              class="text-[10px] text-zinc-500 uppercase tracking-widest block font-bold"
+                              >Phone Number</label
+                            >
+                            <div class="relative">
+                              <i
+                                data-lucide="phone"
+                                class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 pointer-events-none"
+                              ></i>
+                              <input
+                                type="text"
+                                value="+1 (555) 123-4567"
+                                class="w-full bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 focus:border-brand-gold/50 rounded-xl pl-11 pr-4 py-2.5 text-sm text-white focus:outline-none transition-colors shadow-inner"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                          <label
+                            class="text-[10px] text-zinc-500 uppercase tracking-widest block font-bold"
+                            >Default Shipping Address</label
+                          >
+                          <textarea
+                            rows="3"
+                            class="w-full bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 focus:border-brand-gold/50 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors shadow-inner resize-none"
+                          >
+123 Espresso Lane&#10;Seattle, WA 98101</textarea
+                          >
+                        </div>
+
+                        <div
+                          class="pt-6 border-t border-zinc-800/60 flex flex-wrap justify-between items-center gap-4 mt-8"
+                        >
+                          <button
+                            type="button"
+                            class="text-xs font-bold text-red-500 hover:text-red-400 transition-colors uppercase tracking-wider flex items-center gap-1.5"
+                          >
+                            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                            Delete Account
+                          </button>
+                          <div class="flex items-center gap-3 w-full sm:w-auto">
+                            <button
+                              type="button"
+                              class="flex-1 sm:flex-none px-5 py-2.5 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 text-xs font-bold uppercase tracking-wider transition-colors"
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              type="submit"
+                              class="flex-1 sm:flex-none px-6 py-2.5 bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso rounded-xl text-xs font-bold uppercase tracking-wider transition-colors shadow-lg shadow-brand-gold/20 flex items-center justify-center gap-2"
+                            >
+                              <i data-lucide="save" class="w-3.5 h-3.5"></i>
+                              Save Changes
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="../js/theme.js?v=1781245913707" defer=""></script>
+    <script src="../js/rtl.js?v=1781245913707" defer=""></script>
+    <script src="../js/navigation.js?v=1781245913707" defer=""></script>
+  </body>
+</html>

@@ -1,0 +1,1488 @@
+<!doctype html>
+<html lang="en" class="dark" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obscura Coffee Roasters | Specialty Micro-Lot Sourcing</title>
+    <meta
+      name="description"
+      content="Obscura Coffee Roasters sources high-altitude single origin micro-lots directly from remote farms and roasts them in Seattle, WA. Join the subscription club today."
+    />
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme");
+          if (theme === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+          const rtl = localStorage.getItem("rtl") === "true";
+          if (rtl) {
+            document.documentElement.setAttribute("dir", "rtl");
+          } else {
+            document.documentElement.setAttribute("dir", "ltr");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="../css/global.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/theme.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/rtl.css?v=1781245913707" />
+    <script src="./assets/app.js?v=1781245878214" defer=""></script>
+  </head>
+  <body class="bg-[#0b0908]">
+    <div id="root">
+      <div
+        class="min-h-screen bg-brand-espresso text-brand-cream flex flex-col font-sans antialiased selection:bg-brand-gold/30"
+      >
+        <nav
+          class="fixed top-0 w-full bg-brand-espresso z-50 border-b border-brand-lightdark hover:border-brand-lightdark focus:border-brand-lightdark transition-colors duration-300"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+          >
+            <a
+              href="../index.html"
+              class="flex items-center gap-2.5 group cursor-pointer"
+              ><div
+                class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-darkgold to-brand-gold flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"
+              >
+                <i data-lucide="coffee" class="w-4 h-4 text-brand-espresso"></i>
+              </div>
+              <div class="text-left leading-none">
+                <span
+                  class="block text-lg font-bold tracking-widest text-brand-gold font-serif"
+                  >OBSCURA</span
+                ><span
+                  class="block text-[9px] uppercase tracking-widest text-brand-gold/80"
+                  >Coffee Roasters</span
+                >
+              </div></a
+            >
+            <div class="hidden md:flex gap-6 items-center">
+              <div class="relative group py-2 flex flex-col items-center">
+                <button
+                  class="text-sm font-medium transition-all flex items-center gap-1 text-brand-gold font-semibold"
+                >
+                  Home<i
+                    data-lucide="chevron-down"
+                    class="w-3 h-3 opacity-60 transition-transform group-hover:rotate-180"
+                  ></i></button
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-full opacity-100"
+                ></span>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 hidden group-hover:block animate-fade-in-up"
+                >
+                  <div
+                    class="nav-dropdown-menu bg-brand-medium border border-transparent hover:border-brand-lightdark focus:border-brand-lightdark rounded-xl shadow-xl py-1 w-28"
+                  >
+                    <a
+                      href="../index.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Home 1</a
+                    ><a
+                      href="home2.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors bg-brand-gold/15 text-brand-gold"
+                      >Home 2</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="shop.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Shop</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="coffee-club.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Coffee Club</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="contact.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Contact</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="about-beans.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Beans Story</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative group py-2 flex flex-col items-center">
+                <button
+                  class="text-sm font-medium transition-all flex items-center gap-1 text-white/75 hover:text-white"
+                >
+                  Dashboard<i
+                    data-lucide="chevron-down"
+                    class="w-3 h-3 opacity-60 transition-transform group-hover:rotate-180"
+                  ></i></button
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 hidden group-hover:block animate-fade-in-up"
+                >
+                  <div
+                    class="nav-dropdown-menu bg-brand-medium border border-transparent hover:border-brand-lightdark focus:border-brand-lightdark rounded-xl shadow-xl py-1 w-44"
+                  >
+                    <a
+                      href="admin-dashboard.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Admin Dashboard</a
+                    ><a
+                      href="dashboard.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >User Dashboard</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                title="Switch to RTL"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all bg-white/5 border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 hidden md:flex"
+              >
+                <span>RTL</span></button
+              ><button
+                title="Switch to Light mode"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold hidden md:flex"
+              >
+                <i data-lucide="sun" class="w-3.5 h-3.5"></i>
+              </button>
+              <div class="w-px h-5 bg-white/15 mx-1 hidden md:block"></div>
+              <button
+                class="p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors relative"
+                aria-label="Cart"
+              >
+                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+              </button>
+              <div class="relative hidden md:block">
+                <a
+                  href="login.html"
+                  class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-[#A66820] text-brand-cream hover:bg-[#8e581b] shadow-[0_4px_14px_rgba(166,104,32,0.4)] hover:shadow-[0_4px_14px_rgba(166,104,32,0.5)] border border-[#A66820]"
+                  ><i data-lucide="user" class="w-3.5 h-3.5"></i
+                  ><span class="hidden sm:inline">Sign In</span></a
+                >
+              </div>
+              <button
+                class="md:hidden mobile-menu-btn p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors"
+                aria-label="Open menu"
+              >
+                <i data-lucide="menu" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div id="mobile-drawer" class="fixed inset-0 z-50 md:hidden hidden">
+          <div
+            class="fixed inset-0 bg-black/60 backdrop-blur-sm drawer-backdrop"
+          ></div>
+          <div
+            class="fixed top-0 right-0 bottom-0 w-72 bg-white dark:bg-[#0b0908] border-l border-brand-lightdark p-6 pb-12 flex flex-col justify-between animate-slide-in-right shadow-2xl overflow-y-auto"
+          >
+            <div class="flex-grow pr-1">
+              <div
+                class="flex items-center justify-between mb-8 border-b border-brand-lightdark pb-4"
+              >
+                <span
+                  class="font-serif font-bold text-brand-gold tracking-widest text-xl"
+                  >OBSCURA</span
+                ><button
+                  class="text-neutral-500 hover:text-neutral-900 dark:text-brand-cream/60 dark:hover:text-brand-cream p-1 drawer-close"
+                >
+                  <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+              </div>
+              <div class="flex flex-col gap-1 mb-6">
+                <div class="flex flex-col">
+                  <button
+                    class="submenu-toggle text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors flex justify-between items-center bg-brand-gold/15 text-brand-gold font-semibold"
+                  >
+                    <span>Home</span
+                    ><i
+                      data-lucide="chevron-down"
+                      class="w-4 h-4 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="submenu-content pl-4 pr-2 py-1 flex flex-col gap-1 mt-1 border-l border-brand-gold/20 ml-5 hidden"
+                  >
+                    <a
+                      href="../index.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Home 1</a
+                    ><a
+                      href="home2.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-brand-gold font-semibold bg-brand-gold/5"
+                      >Home 2</a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="shop.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Shop</a
+                ><a
+                  href="coffee-club.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Coffee Club</a
+                ><a
+                  href="contact.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Contact</a
+                ><a
+                  href="about-beans.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Beans Story</a
+                >
+                <div class="flex flex-col">
+                  <button
+                    class="submenu-toggle text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors flex justify-between items-center text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >
+                    <span>Dashboard</span
+                    ><i
+                      data-lucide="chevron-down"
+                      class="w-4 h-4 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="submenu-content pl-4 pr-2 py-1 flex flex-col gap-1 mt-1 border-l border-brand-gold/20 ml-5 hidden"
+                  >
+                    <a
+                      href="admin-dashboard.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Admin Dashboard</a
+                    ><a
+                      href="dashboard.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >User Dashboard</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-brand-lightdark pt-5 space-y-4">
+              <div class="flex gap-3">
+                <button
+                  title="Switch to RTL"
+                  class="flex-grow flex items-center justify-center py-2.5 rounded-xl border border-transparent hover:border-current focus:border-current text-sm font-bold uppercase tracking-wider transition-all bg-white/5 border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25"
+                >
+                  <span>RTL</span></button
+                ><button
+                  title="Switch to Light mode"
+                  class="flex-grow flex items-center justify-center py-2.5 rounded-xl border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold"
+                >
+                  <i data-lucide="sun" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <a
+                href="login.html"
+                class="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-brand-darkgold to-brand-gold text-brand-espresso font-bold uppercase tracking-widest text-xs rounded-full py-3.5 hover:brightness-110 transition-all shadow-md shadow-brand-gold/20 mobile-login-btn"
+                ><i data-lucide="user" class="w-4 h-4"></i
+                ><span>Sign In</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <main class="flex-grow">
+          <div class="space-y-14 pb-14 animate-fade-in-up">
+            <section
+              class="relative min-h-[85vh] flex items-center overflow-hidden"
+            >
+              <div class="absolute inset-0 z-0">
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-brand-espresso/30 via-brand-espresso/80 to-brand-espresso z-10"
+                ></div>
+                <img
+                  alt="Premium Roastery Background"
+                  class="w-full h-full object-cover scale-105 filter brightness-50 contrast-125"
+                  src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&amp;fit=crop&amp;w=1920&amp;q=80"
+                />
+              </div>
+              <div
+                class="max-w-7xl mx-auto px-6 text-left relative z-20 space-y-6 mt-8 w-full pt-24 md:pt-28"
+              >
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 bg-brand-gold/10 border border-transparent hover:border-brand-gold/25 focus:border-brand-gold/25 text-brand-gold text-xs uppercase tracking-widest font-semibold rounded-full"
+                >
+                  <i data-lucide="award" class="w-3.5 h-3.5"></i> Reserve Batch
+                  Coffee Roasters
+                </div>
+                <h1
+                  class="text-5xl md:text-7xl font-serif font-bold text-brand-cream leading-tight tracking-wide"
+                >
+                  Where Science <br />
+                  Meets <span class="text-brand-gold italic">Sensory Art</span>
+                </h1>
+                <p
+                  class="text-zinc-300 max-w-2xl text-base md:text-lg font-light leading-relaxed"
+                >
+                  Obscura's second-generation roastery uses real-time convective
+                  temperature mapping to unlock unmatched floral sweetness and
+                  complex acidities from rare micro-lots.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row gap-4 justify-start items-start sm:items-center pt-2"
+                >
+                  <button
+                    class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso font-bold uppercase tracking-widest text-sm transition-all shadow-lg hover:shadow-brand-gold/10 hover:-translate-y-0.5"
+                  >
+                    Configure Blend Plan</button
+                  ><button
+                    class="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-transparent focus:border-zinc-700 hover:border-brand-gold text-brand-cream hover:text-brand-gold font-bold uppercase tracking-widest text-sm transition-all bg-brand-espresso/30 backdrop-blur-sm"
+                  >
+                    Explore Cellar Beans
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="max-w-7xl mx-auto px-6">
+              <div class="text-center space-y-3 mb-10">
+                <h2
+                  class="text-3xl md:text-4xl font-serif font-bold text-white"
+                >
+                  Limited Reserve Micro-lots
+                </h2>
+                <p class="text-zinc-400 max-w-lg mx-auto text-sm">
+                  Exquisite microlots sourced from farmers pushing sensory
+                  boundaries through innovative fermentation styles.
+                </p>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div
+                  class="lg:col-span-8 bg-brand-medium/50 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group min-h-[400px]"
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/50 to-transparent z-10"
+                  ></div>
+                  <img
+                    alt="Coffee Farm Origin"
+                    class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700 ease-out"
+                    src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  />
+                  <div class="relative z-20">
+                    <span
+                      class="text-[10px] uppercase font-bold tracking-widest text-brand-gold px-2.5 py-1 rounded bg-brand-gold/15 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 inline-block mb-4"
+                      >Origin Spotlight</span
+                    >
+                    <h3 class="text-3xl font-serif font-bold text-white mb-2">
+                      Huila Region Ferments
+                    </h3>
+                    <p class="text-zinc-400 text-sm max-w-md">
+                      Our latest batch features direct-trade micro-lots
+                      processed via 72-hour anaerobic fermentation under
+                      constant pH tracking.
+                    </p>
+                  </div>
+                  <div
+                    class="relative z-20 flex flex-wrap gap-6 items-center pt-8 border-t border-transparent hover:border-zinc-800/80 focus:border-zinc-800/80 mt-10"
+                  >
+                    <div class="space-y-1">
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Average Elevation</span
+                      ><span class="block text-sm font-semibold text-brand-gold"
+                        >1,850m - 2,100m</span
+                      >
+                    </div>
+                    <div class="space-y-1">
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Harvest Profile</span
+                      ><span class="block text-sm font-semibold text-brand-gold"
+                        >100% Hand-picked Red Cherry</span
+                      >
+                    </div>
+                    <button
+                      class="ml-auto flex items-center gap-1 text-xs font-bold text-brand-gold hover:underline"
+                    >
+                      Browse Huila lots
+                      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="lg:col-span-4 flex flex-col gap-8">
+                  <div
+                    class="bg-brand-medium/50 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group flex-1"
+                  >
+                    <div
+                      class="absolute inset-0 bg-brand-espresso/70 z-10"
+                    ></div>
+                    <img
+                      alt="Panama Geisha Reserve"
+                      class="absolute inset-0 w-full h-full object-cover opacity-15 group-hover:scale-110 transition-transform duration-700 ease-out"
+                      src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                    />
+                    <div class="relative z-20 space-y-3">
+                      <div class="flex justify-between items-start">
+                        <span
+                          class="text-[9px] uppercase tracking-widest text-brand-gold font-bold px-2 py-0.5 rounded bg-brand-gold/10"
+                          >Competition Grade</span
+                        ><span class="text-xs font-mono text-zinc-400"
+                          >91.5 SCA</span
+                        >
+                      </div>
+                      <div>
+                        <h4 class="text-lg font-serif font-bold text-white">
+                          Panama Geisha Reserve
+                        </h4>
+                        <p class="text-zinc-500 text-xs">
+                          Boquete Valley · 1,950m
+                        </p>
+                      </div>
+                      <p class="text-zinc-400 text-xs line-clamp-1 italic">
+                        "Jasmine, Mandarin Orange, Bergamot"
+                      </p>
+                    </div>
+                    <div
+                      class="relative z-20 flex justify-between items-center pt-4 border-t border-transparent hover:border-zinc-800/80 focus:border-zinc-800/80 mt-4"
+                    >
+                      <span class="text-brand-gold font-mono font-bold text-sm"
+                        >$48.00</span
+                      ><button
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded bg-zinc-800 hover:bg-brand-gold hover:text-brand-espresso text-zinc-300 transition-colors"
+                      >
+                        Buy
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/50 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group flex-1"
+                  >
+                    <div
+                      class="absolute inset-0 bg-brand-espresso/70 z-10"
+                    ></div>
+                    <img
+                      alt="Colombia Pink Bourbon"
+                      class="absolute inset-0 w-full h-full object-cover opacity-15 group-hover:scale-110 transition-transform duration-700 ease-out"
+                      src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                    />
+                    <div class="relative z-20 space-y-3">
+                      <div class="flex justify-between items-start">
+                        <span
+                          class="text-[9px] uppercase tracking-widest text-brand-gold font-bold px-2 py-0.5 rounded bg-brand-gold/10"
+                          >Anaerobic Ferment</span
+                        ><span class="text-xs font-mono text-zinc-400"
+                          >89.0 SCA</span
+                        >
+                      </div>
+                      <div>
+                        <h4 class="text-lg font-serif font-bold text-white">
+                          Colombia Pink Bourbon
+                        </h4>
+                        <p class="text-zinc-500 text-xs">
+                          Huila Region · 1,800m
+                        </p>
+                      </div>
+                      <p class="text-zinc-400 text-xs line-clamp-1 italic">
+                        "Pink Grapefruit, Honey, Brown Sugar"
+                      </p>
+                    </div>
+                    <div
+                      class="relative z-20 flex justify-between items-center pt-4 border-t border-transparent hover:border-zinc-800/80 focus:border-zinc-800/80 mt-4"
+                    >
+                      <span class="text-brand-gold font-mono font-bold text-sm"
+                        >$29.00</span
+                      ><button
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded bg-zinc-800 hover:bg-brand-gold hover:text-brand-espresso text-zinc-300 transition-colors"
+                      >
+                        Buy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="max-w-5xl mx-auto px-6">
+              <div
+                class="bg-brand-medium/30 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-8 md:p-12 rounded-3xl relative overflow-hidden"
+              >
+                <div class="max-w-2xl space-y-4 mb-6">
+                  <h2 class="text-3xl font-serif font-bold text-white">
+                    Interactive Profile Selection
+                  </h2>
+                  <p class="text-zinc-400 text-sm">
+                    Different roast thresholds highlight different chemical
+                    compounds. Choose a roasting level below to review flavor
+                    profiles and target drop temperatures.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                  <div class="md:col-span-4 flex flex-col gap-3">
+                    <button
+                      class="text-left p-4 rounded-2xl border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold focus:border-brand-gold text-brand-gold shadow-md"
+                    >
+                      <span
+                        class="block font-bold text-sm uppercase tracking-wider"
+                        >light Profile</span
+                      ><span class="block text-xs mt-0.5 font-light"
+                        >Light Roast</span
+                      ></button
+                    ><button
+                      class="text-left p-4 rounded-2xl border border-transparent hover:border-current focus:border-current transition-all bg-brand-medium/55 border-transparent focus:border-neutral-800 text-zinc-400 hover:border-zinc-700"
+                    >
+                      <span
+                        class="block font-bold text-sm uppercase tracking-wider"
+                        >medium Profile</span
+                      ><span class="block text-xs mt-0.5 font-light"
+                        >Medium Roast</span
+                      ></button
+                    ><button
+                      class="text-left p-4 rounded-2xl border border-transparent hover:border-current focus:border-current transition-all bg-brand-medium/55 border-transparent focus:border-neutral-800 text-zinc-400 hover:border-zinc-700"
+                    >
+                      <span
+                        class="block font-bold text-sm uppercase tracking-wider"
+                        >dark Profile</span
+                      ><span class="block text-xs mt-0.5 font-light"
+                        >Dark Roast</span
+                      >
+                    </button>
+                  </div>
+                  <div
+                    class="md:col-span-8 bg-brand-medium/80 border border-transparent hover:border-neutral-800/60 focus:border-neutral-800/60 p-6 rounded-2xl space-y-5"
+                  >
+                    <div
+                      class="flex justify-between items-baseline border-b border-transparent hover:border-zinc-850 focus:border-zinc-850 pb-3"
+                    >
+                      <h3 class="text-xl font-serif font-bold text-white">
+                        Light Roast (SCA 88+)
+                      </h3>
+                      <span
+                        class="text-xs font-mono text-brand-gold bg-brand-gold/10 px-2 py-0.5 rounded"
+                        >196°C - 204°C Drop</span
+                      >
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                      Preserves the pure genetic flavor profile of the bean.
+                      Highly expressive of soil chemistry, micro-climate
+                      elevation, and washing method.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="space-y-1">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                          >Body &amp; Weight</span
+                        ><span class="text-zinc-300 text-sm font-medium"
+                          >Delicate &amp; Tea-like</span
+                        >
+                      </div>
+                      <div class="space-y-1">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                          >Acid Profile</span
+                        ><span class="text-zinc-300 text-sm font-medium"
+                          >High, Crisp Phosphoric</span
+                        >
+                      </div>
+                    </div>
+                    <div class="space-y-2 pt-2">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                        >Sensory Tasting Notes</span
+                      >
+                      <div class="flex flex-wrap gap-2">
+                        <span
+                          class="bg-zinc-850 text-zinc-300 text-xs px-2.5 py-1 rounded-full border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                          >Jasmine Floral</span
+                        ><span
+                          class="bg-zinc-850 text-zinc-300 text-xs px-2.5 py-1 rounded-full border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                          >Bergamot</span
+                        ><span
+                          class="bg-zinc-850 text-zinc-300 text-xs px-2.5 py-1 rounded-full border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                          >Meyer Lemon</span
+                        ><span
+                          class="bg-zinc-850 text-zinc-300 text-xs px-2.5 py-1 rounded-full border border-transparent hover:border-neutral-800 focus:border-neutral-800"
+                          >White Peach</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="pt-3 border-t border-transparent hover:border-zinc-850 focus:border-zinc-850 flex items-center justify-between"
+                    >
+                      <span class="text-xs text-zinc-500 italic"
+                        >Recommended origins: Panama Geisha, Ethiopian
+                        Yirgacheffe</span
+                      ><a
+                        href="shop.html"
+                        class="flex items-center gap-1 text-xs font-bold text-brand-gold hover:underline"
+                        >Shop Single Origins
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="max-w-7xl mx-auto px-6">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-brand-gold/10 border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 flex items-center justify-center text-brand-gold"
+                  >
+                    <i data-lucide="compass" class="w-6 h-6"></i>
+                  </div>
+                  <h2
+                    class="text-3xl md:text-4xl font-serif font-bold text-white"
+                  >
+                    Precision Brew Ratio Guide
+                  </h2>
+                  <p class="text-zinc-400 text-sm leading-relaxed">
+                    Brewing temperature, grind consistency, and extraction speed
+                    are critical to experiencing the bean's full flavor. Choose
+                    your method to view extraction metrics.
+                  </p>
+                  <div class="flex flex-wrap gap-2.5">
+                    <button
+                      class="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-colors bg-brand-gold text-brand-espresso border-transparent hover:border-brand-gold focus:border-brand-gold"
+                    >
+                      Hario V60</button
+                    ><button
+                      class="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-colors bg-brand-espresso border-transparent focus:border-neutral-800 text-zinc-400 hover:border-zinc-700"
+                    >
+                      Espresso</button
+                    ><button
+                      class="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-colors bg-brand-espresso border-transparent focus:border-neutral-800 text-zinc-400 hover:border-zinc-700"
+                    >
+                      French Press
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="lg:col-span-7 bg-brand-medium/40 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 relative overflow-hidden"
+                >
+                  <div class="space-y-4">
+                    <div class="space-y-1">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                        >Recommended Ratio</span
+                      ><span class="text-white font-mono text-lg font-bold"
+                        >1:15 (15g coffee, 225g water)</span
+                      >
+                    </div>
+                    <div class="space-y-1">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                        >Grind Density</span
+                      ><span class="text-white text-base font-semibold"
+                        >Medium-Fine (like table salt)</span
+                      >
+                    </div>
+                    <div class="space-y-1">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                        >Ideal Water Temp</span
+                      ><span class="text-brand-gold font-mono text-lg font-bold"
+                        >93°C</span
+                      >
+                    </div>
+                    <div class="space-y-1">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-widest block"
+                        >Extraction Duration</span
+                      ><span class="text-white text-base font-semibold"
+                        >3:00 mins</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="bg-brand-medium/70 border border-transparent hover:border-neutral-800 focus:border-neutral-800 p-6 rounded-2xl space-y-3 flex flex-col justify-between"
+                  >
+                    <div class="space-y-2">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-widest block font-bold"
+                        >Extraction Notes</span
+                      >
+                      <p class="text-zinc-400 text-xs leading-relaxed">
+                        Bloom with 45g water for 40s. Pour in concentric circles
+                        up to 150g, then final pour to 225g. Yields a clean,
+                        bright, and highly aromatic cup.
+                      </p>
+                    </div>
+                    <div
+                      class="flex gap-2 items-center text-xs text-zinc-400 bg-brand-espresso/30 p-2.5 rounded border border-transparent hover:border-neutral-800/40 focus:border-neutral-800/40"
+                    >
+                      <i
+                        data-lucide="info"
+                        class="w-4 h-4 text-brand-gold shrink-0"
+                      ></i
+                      ><span
+                        >Adjust ratio slightly to modify extraction
+                        strength.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="max-w-5xl mx-auto px-6">
+              <div class="text-center space-y-3 mb-10">
+                <div
+                  class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-transparent hover:border-brand-gold/25 focus:border-brand-gold/25 text-brand-gold text-xs uppercase tracking-widest font-semibold"
+                >
+                  <i data-lucide="thermometer" class="w-3.5 h-3.5"></i> From
+                  Cherry to Cup
+                </div>
+                <h2
+                  class="text-3xl md:text-4xl font-serif font-bold text-white"
+                >
+                  The Roasting Journey
+                </h2>
+                <p class="text-zinc-400 max-w-xl mx-auto text-sm">
+                  Every bag of Obscura coffee travels through five
+                  precision-controlled stages before it reaches your grinder.
+                </p>
+              </div>
+              <div class="relative">
+                <div class="space-y-10">
+                  <div class="flex gap-6 md:gap-10 items-start">
+                    <div class="flex flex-col items-center shrink-0">
+                      <div
+                        class="w-12 h-12 rounded-full bg-brand-gold/15 border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 text-brand-gold flex items-center justify-center"
+                      >
+                        <i data-lucide="globe" class="w-5 h-5"></i>
+                      </div>
+                      <span
+                        class="text-[10px] font-mono text-brand-gold/50 mt-1"
+                        >01</span
+                      >
+                    </div>
+                    <div
+                      class="bg-brand-medium/30 border border-transparent focus:border-neutral-850 rounded-2xl p-6 flex-1 group hover:border-brand-gold/20 transition-colors"
+                    >
+                      <h3 class="text-white font-serif font-bold text-lg mb-2">
+                        Direct-Trade Sourcing
+                      </h3>
+                      <p class="text-zinc-400 text-sm leading-relaxed">
+                        We visit farms personally in Colombia, Ethiopia, Panama
+                        and Guatemala — building multi-year relationships with
+                        producers who share our obsession for quality. No
+                        middlemen. No commodity lots.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex gap-6 md:gap-10 items-start md:flex-row-reverse"
+                  >
+                    <div class="flex flex-col items-center shrink-0">
+                      <div
+                        class="w-12 h-12 rounded-full bg-brand-gold/15 border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 text-brand-gold flex items-center justify-center"
+                      >
+                        <i data-lucide="droplets" class="w-5 h-5"></i>
+                      </div>
+                      <span
+                        class="text-[10px] font-mono text-brand-gold/50 mt-1"
+                        >02</span
+                      >
+                    </div>
+                    <div
+                      class="bg-brand-medium/30 border border-transparent focus:border-neutral-850 rounded-2xl p-6 flex-1 group hover:border-brand-gold/20 transition-colors md:text-right"
+                    >
+                      <h3 class="text-white font-serif font-bold text-lg mb-2">
+                        Fermentation &amp; Processing
+                      </h3>
+                      <p class="text-zinc-400 text-sm leading-relaxed">
+                        Cherries are sorted by density and processed using
+                        washed, natural, or anaerobic methods. Our partners use
+                        controlled pH environments and temperature logging to
+                        develop precise flavor compounds.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-6 md:gap-10 items-start">
+                    <div class="flex flex-col items-center shrink-0">
+                      <div
+                        class="w-12 h-12 rounded-full bg-brand-gold/15 border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 text-brand-gold flex items-center justify-center"
+                      >
+                        <i data-lucide="flask-conical" class="w-5 h-5"></i>
+                      </div>
+                      <span
+                        class="text-[10px] font-mono text-brand-gold/50 mt-1"
+                        >03</span
+                      >
+                    </div>
+                    <div
+                      class="bg-brand-medium/30 border border-transparent focus:border-neutral-850 rounded-2xl p-6 flex-1 group hover:border-brand-gold/20 transition-colors"
+                    >
+                      <h3 class="text-white font-serif font-bold text-lg mb-2">
+                        Pre-Shipment Cupping
+                      </h3>
+                      <p class="text-zinc-400 text-sm leading-relaxed">
+                        Every lot is evaluated by our SCA-Certified Q-Grader
+                        in-country before shipping. Only lots scoring 84+ SCA
+                        points are approved. We reject over 60% of sampled lots
+                        each season.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex gap-6 md:gap-10 items-start md:flex-row-reverse"
+                  >
+                    <div class="flex flex-col items-center shrink-0">
+                      <div
+                        class="w-12 h-12 rounded-full bg-brand-gold/15 border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 text-brand-gold flex items-center justify-center"
+                      >
+                        <i data-lucide="thermometer" class="w-5 h-5"></i>
+                      </div>
+                      <span
+                        class="text-[10px] font-mono text-brand-gold/50 mt-1"
+                        >04</span
+                      >
+                    </div>
+                    <div
+                      class="bg-brand-medium/30 border border-transparent focus:border-neutral-850 rounded-2xl p-6 flex-1 group hover:border-brand-gold/20 transition-colors md:text-right"
+                    >
+                      <h3 class="text-white font-serif font-bold text-lg mb-2">
+                        Convective Roasting
+                      </h3>
+                      <p class="text-zinc-400 text-sm leading-relaxed">
+                        Our drum roaster uses real-time temperature mapping —
+                        tracking Rate of Rise (RoR), Bean Temperature, and
+                        airflow every 30 seconds. Each profile is customized per
+                        bean density and moisture content.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-6 md:gap-10 items-start">
+                    <div class="flex flex-col items-center shrink-0">
+                      <div
+                        class="w-12 h-12 rounded-full bg-brand-gold/15 border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 text-brand-gold flex items-center justify-center"
+                      >
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                      </div>
+                      <span
+                        class="text-[10px] font-mono text-brand-gold/50 mt-1"
+                        >05</span
+                      >
+                    </div>
+                    <div
+                      class="bg-brand-medium/30 border border-transparent focus:border-neutral-850 rounded-2xl p-6 flex-1 group hover:border-brand-gold/20 transition-colors"
+                    >
+                      <h3 class="text-white font-serif font-bold text-lg mb-2">
+                        Degassing &amp; Dispatch
+                      </h3>
+                      <p class="text-zinc-400 text-sm leading-relaxed">
+                        Freshly roasted beans release CO₂ for 24–72 hours. We
+                        rest each batch in valve-sealed bags for exactly 48
+                        hours before dispatch — ensuring peak extraction quality
+                        arrives at your door.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="max-w-7xl mx-auto px-6">
+              <div class="text-center space-y-3 mb-10">
+                <div
+                  class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-transparent hover:border-brand-gold/25 focus:border-brand-gold/25 text-brand-gold text-xs uppercase tracking-widest font-semibold"
+                >
+                  <i data-lucide="leaf" class="w-3.5 h-3.5"></i> Our Commitment
+                </div>
+                <h2
+                  class="text-3xl md:text-4xl font-serif font-bold text-white"
+                >
+                  Sourcing Philosophy
+                </h2>
+                <p class="text-zinc-400 max-w-xl mx-auto text-sm">
+                  We believe exceptional coffee starts long before the roaster.
+                  Our sourcing model is built on three non-negotiable
+                  principles.
+                </p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                  class="bg-gradient-to-b from-brand-gold/20 to-transparent bg-brand-medium/20 border border-transparent focus:border-neutral-850 rounded-3xl p-8 flex flex-col gap-6 hover:border-brand-gold/20 transition-colors group"
+                >
+                  <div class="flex items-start justify-between">
+                    <div
+                      class="w-14 h-14 rounded-2xl bg-brand-gold/10 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 text-brand-gold flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors"
+                    >
+                      <i data-lucide="globe" class="w-7 h-7"></i>
+                    </div>
+                    <span
+                      class="text-[9px] uppercase tracking-widest font-bold text-brand-gold bg-brand-gold/10 px-2 py-1 rounded"
+                      >No Middlemen</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="text-white font-serif font-bold text-xl mb-3">
+                      Direct-Trade Partnerships
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                      We work directly with 11 farming families across 4
+                      countries. Each producer receives 25–40% above Fair Trade
+                      floor prices. We co-invest in solar drying tables, cherry
+                      sorters, and fermentation tanks.
+                    </p>
+                  </div>
+                  <div
+                    class="border-t border-transparent hover:border-neutral-800/80 focus:border-neutral-800/80 pt-4 grid grid-cols-2 gap-4 mt-auto"
+                  >
+                    <div>
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Avg. Price Premium</span
+                      ><span
+                        class="block text-brand-gold font-mono font-bold text-sm mt-0.5"
+                        >31%</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Farm Partnerships</span
+                      ><span
+                        class="block text-brand-gold font-mono font-bold text-sm mt-0.5"
+                        >11 Active</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-b from-emerald-900/20 to-transparent bg-brand-medium/20 border border-transparent focus:border-neutral-850 rounded-3xl p-8 flex flex-col gap-6 hover:border-brand-gold/20 transition-colors group"
+                >
+                  <div class="flex items-start justify-between">
+                    <div
+                      class="w-14 h-14 rounded-2xl bg-brand-gold/10 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 text-brand-gold flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors"
+                    >
+                      <i data-lucide="thermometer" class="w-7 h-7"></i>
+                    </div>
+                    <span
+                      class="text-[9px] uppercase tracking-widest font-bold text-brand-gold bg-brand-gold/10 px-2 py-1 rounded"
+                      >1,700m+ Only</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="text-white font-serif font-bold text-xl mb-3">
+                      Altitude-Driven Quality
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                      High-altitude coffee develops more slowly, concentrating
+                      sugars and organic acids. Every lot we purchase originates
+                      above 1,700 meters — the threshold for truly expressive
+                      specialty flavor development.
+                    </p>
+                  </div>
+                  <div
+                    class="border-t border-transparent hover:border-neutral-800/80 focus:border-neutral-800/80 pt-4 grid grid-cols-2 gap-4 mt-auto"
+                  >
+                    <div>
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Min. Altitude</span
+                      ><span
+                        class="block text-brand-gold font-mono font-bold text-sm mt-0.5"
+                        >1,700m</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Avg. SCA Score</span
+                      ><span
+                        class="block text-brand-gold font-mono font-bold text-sm mt-0.5"
+                        >87.2 pts</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-b from-purple-900/20 to-transparent bg-brand-medium/20 border border-transparent focus:border-neutral-850 rounded-3xl p-8 flex flex-col gap-6 hover:border-brand-gold/20 transition-colors group"
+                >
+                  <div class="flex items-start justify-between">
+                    <div
+                      class="w-14 h-14 rounded-2xl bg-brand-gold/10 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 text-brand-gold flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors"
+                    >
+                      <i data-lucide="star" class="w-7 h-7"></i>
+                    </div>
+                    <span
+                      class="text-[9px] uppercase tracking-widest font-bold text-brand-gold bg-brand-gold/10 px-2 py-1 rounded"
+                      >Q-Grader Verified</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="text-white font-serif font-bold text-xl mb-3">
+                      SCA Certification Standards
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                      Our head roaster is a certified SCA Q-Grader — the highest
+                      qualification in specialty coffee. Every lot passes a
+                      blind cupping protocol scoring aroma, flavor, aftertaste,
+                      acidity, body, uniformity, and overall.
+                    </p>
+                  </div>
+                  <div
+                    class="border-t border-transparent hover:border-neutral-800/80 focus:border-neutral-800/80 pt-4 grid grid-cols-2 gap-4 mt-auto"
+                  >
+                    <div>
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Cupping Attributes</span
+                      ><span
+                        class="block text-brand-gold font-mono font-bold text-sm mt-0.5"
+                        >10 Point Scale</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="block text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Rejection Rate</span
+                      ><span
+                        class="block text-brand-gold font-mono font-bold text-sm mt-0.5"
+                        >62% of Samples</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="max-w-7xl mx-auto px-6 pb-10">
+              <div
+                class="bg-brand-medium/25 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-8 md:p-12 space-y-10"
+              >
+                <div
+                  class="flex flex-col md:flex-row md:items-end justify-between gap-6"
+                >
+                  <div class="space-y-3">
+                    <div
+                      class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-transparent hover:border-brand-gold/25 focus:border-brand-gold/25 text-brand-gold text-xs uppercase tracking-widest font-semibold"
+                    >
+                      <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i>
+                      Cupping Lab
+                    </div>
+                    <h2
+                      class="text-3xl md:text-4xl font-serif font-bold text-white"
+                    >
+                      Latest Tasting Notes
+                    </h2>
+                    <p class="text-zinc-400 text-sm max-w-lg">
+                      Our Q-Grader cups every incoming lot using the SCA
+                      protocol. These are live session notes from our Seattle
+                      roastery lab.
+                    </p>
+                  </div>
+                  <a
+                    href="shop.html"
+                    class="flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso font-bold text-sm uppercase tracking-wider transition-all shrink-0 self-start md:self-end"
+                    >Shop All Lots
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i
+                  ></a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div
+                    class="border border-transparent hover:border-current focus:border-current bg-emerald-900/10 border-transparent hover:border-emerald-900/40 focus:border-emerald-900/40 rounded-2xl p-6 flex flex-col gap-5 hover:border-brand-gold/30 transition-colors"
+                  >
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <h3
+                          class="font-serif font-bold text-white text-base leading-snug"
+                        >
+                          Ethiopia Yirgacheffe G1
+                        </h3>
+                        <p class="text-zinc-500 text-xs mt-0.5">
+                          Washed · Cupped: May 28, 2026
+                        </p>
+                      </div>
+                      <div class="text-right shrink-0">
+                        <span
+                          class="block text-2xl font-mono font-bold text-emerald-400"
+                          >90.0</span
+                        ><span
+                          class="text-[9px] text-zinc-500 uppercase tracking-wider"
+                          >SCA pts</span
+                        >
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Aroma</span
+                        ><span class="text-zinc-300 font-semibold">9.0</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Flavor</span
+                        ><span class="text-zinc-300 font-semibold">8.75</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Acidity</span
+                        ><span class="text-zinc-300 font-semibold">High</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Body</span
+                        ><span class="text-zinc-300 font-semibold">Light</span>
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Tasting Notes</span
+                      >
+                      <div class="flex flex-wrap gap-1.5">
+                        <span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Bergamot</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Lemon Curd</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Jasmine Tea</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Stone Fruit</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="border-t border-transparent hover:border-neutral-800/60 focus:border-neutral-800/60 pt-3 flex items-center gap-1.5 text-[10px] text-zinc-600"
+                    >
+                      <i data-lucide="clock" class="w-3 h-3"></i> Head Q-Grader:
+                      Venkat S.
+                    </div>
+                  </div>
+                  <div
+                    class="border border-transparent hover:border-current focus:border-current bg-rose-900/10 border-transparent hover:border-rose-900/40 focus:border-rose-900/40 rounded-2xl p-6 flex flex-col gap-5 hover:border-brand-gold/30 transition-colors"
+                  >
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <h3
+                          class="font-serif font-bold text-white text-base leading-snug"
+                        >
+                          Colombia Pink Bourbon
+                        </h3>
+                        <p class="text-zinc-500 text-xs mt-0.5">
+                          Anaerobic Natural · Cupped: Jun 02, 2026
+                        </p>
+                      </div>
+                      <div class="text-right shrink-0">
+                        <span
+                          class="block text-2xl font-mono font-bold text-rose-400"
+                          >88.5</span
+                        ><span
+                          class="text-[9px] text-zinc-500 uppercase tracking-wider"
+                          >SCA pts</span
+                        >
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Aroma</span
+                        ><span class="text-zinc-300 font-semibold">8.75</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Flavor</span
+                        ><span class="text-zinc-300 font-semibold">8.5</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Acidity</span
+                        ><span class="text-zinc-300 font-semibold">Medium</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Body</span
+                        ><span class="text-zinc-300 font-semibold">Syrupy</span>
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Tasting Notes</span
+                      >
+                      <div class="flex flex-wrap gap-1.5">
+                        <span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Strawberry Jam</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Hibiscus</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Dark Honey</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Cacao Nib</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="border-t border-transparent hover:border-neutral-800/60 focus:border-neutral-800/60 pt-3 flex items-center gap-1.5 text-[10px] text-zinc-600"
+                    >
+                      <i data-lucide="clock" class="w-3 h-3"></i> Head Q-Grader:
+                      Venkat S.
+                    </div>
+                  </div>
+                  <div
+                    class="border border-transparent hover:border-current focus:border-current bg-amber-900/10 border-transparent hover:border-amber-900/40 focus:border-amber-900/40 rounded-2xl p-6 flex flex-col gap-5 hover:border-brand-gold/30 transition-colors"
+                  >
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <h3
+                          class="font-serif font-bold text-white text-base leading-snug"
+                        >
+                          Panama Geisha Reserve
+                        </h3>
+                        <p class="text-zinc-500 text-xs mt-0.5">
+                          Natural Honey · Cupped: Jun 05, 2026
+                        </p>
+                      </div>
+                      <div class="text-right shrink-0">
+                        <span
+                          class="block text-2xl font-mono font-bold text-amber-400"
+                          >91.5</span
+                        ><span
+                          class="text-[9px] text-zinc-500 uppercase tracking-wider"
+                          >SCA pts</span
+                        >
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Aroma</span
+                        ><span class="text-zinc-300 font-semibold">9.25</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Flavor</span
+                        ><span class="text-zinc-300 font-semibold">9.0</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Acidity</span
+                        ><span class="text-zinc-300 font-semibold">Crisp</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <span
+                          class="text-[10px] text-zinc-500 uppercase tracking-wider block"
+                          >Body</span
+                        ><span class="text-zinc-300 font-semibold"
+                          >Delicate</span
+                        >
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <span
+                        class="text-[10px] text-zinc-500 uppercase tracking-wider"
+                        >Tasting Notes</span
+                      >
+                      <div class="flex flex-wrap gap-1.5">
+                        <span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Mandarin Orange</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >White Peach</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Tropical Floral</span
+                        ><span
+                          class="text-[10px] px-2 py-0.5 rounded-full bg-brand-medium/60 border border-transparent hover:border-neutral-800 focus:border-neutral-800 text-zinc-400"
+                          >Almond Milk</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="border-t border-transparent hover:border-neutral-800/60 focus:border-neutral-800/60 pt-3 flex items-center gap-1.5 text-[10px] text-zinc-600"
+                    >
+                      <i data-lucide="clock" class="w-3 h-3"></i> Head Q-Grader:
+                      Venkat S.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer
+          class="bg-brand-espresso border-t border-transparent hover:border-neutral-900 focus:border-neutral-900 pt-16 pb-8"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900"
+            >
+              <div class="md:col-span-4 space-y-5">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="w-8 h-8 rounded-lg bg-brand-gold flex items-center justify-center"
+                  >
+                    <i
+                      data-lucide="coffee"
+                      class="w-4.5 h-4.5 text-brand-espresso"
+                    ></i>
+                  </div>
+                  <span
+                    class="font-serif font-bold tracking-widest text-brand-cream text-lg"
+                    >OBSCURA</span
+                  >
+                </div>
+                <p class="text-sm text-brand-latte/70 leading-relaxed max-w-sm">
+                  We source single-origin micro-lots directly from remote farms.
+                  Roasted in micro-batches with meticulous temperature curves to
+                  unlock the true terroir of each bean.
+                </p>
+                <p class="text-xs text-brand-gold font-sans font-semibold">
+                  ROASTED FRESH IN SEATTLE, WA
+                </p>
+              </div>
+              <div class="md:col-span-2 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Explore
+                </h4>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      href="shop.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Shop Catalog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="coffee-club.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Coffee Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="about-beans.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Seed-to-Cup Journey</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-2 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Support
+                </h4>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Roastery FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="comingsoon.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Shipping &amp; Returns</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-4 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Stay Roasted
+                </h4>
+                <p class="text-sm text-brand-latte/70">
+                  Subscribe to receive micro-lot releases, roast dates, and
+                  professional brewing guides.
+                </p>
+                <form class="relative mt-2">
+                  <input
+                    required=""
+                    placeholder="Enter your email"
+                    class="w-full bg-brand-medium border border-transparent hover:border-neutral-800 rounded-lg py-3 pl-4 pr-12 text-sm text-brand-cream placeholder-neutral-500 outline-none focus:border-brand-gold/50"
+                    type="email"
+                    value=""
+                  /><button
+                    type="submit"
+                    class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-brand-gold hover:bg-brand-gold/85 text-brand-espresso p-1.5 rounded-md transition-colors"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-latte/50"
+            >
+              <p>
+                © 2026 Obscura Coffee Roasters. Crafted with premium terroir.
+              </p>
+              <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Privacy Policy</a
+                ><a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Terms of Service</a
+                ><a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Sitemap</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="../js/theme.js?v=1781245913707" defer=""></script>
+    <script src="../js/rtl.js?v=1781245913707" defer=""></script>
+    <script src="../js/navigation.js?v=1781245913707" defer=""></script>
+  </body>
+</html>

@@ -1,0 +1,1570 @@
+<!doctype html>
+<html lang="en" class="dark" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obscura Coffee Roasters | Specialty Micro-Lot Sourcing</title>
+    <meta
+      name="description"
+      content="Obscura Coffee Roasters sources high-altitude single origin micro-lots directly from remote farms and roasts them in Seattle, WA. Join the subscription club today."
+    />
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme");
+          if (theme === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+          const rtl = localStorage.getItem("rtl") === "true";
+          if (rtl) {
+            document.documentElement.setAttribute("dir", "rtl");
+          } else {
+            document.documentElement.setAttribute("dir", "ltr");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="../css/global.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/theme.css?v=1781245913707" />
+    <link rel="stylesheet" href="../css/rtl.css?v=1781245913707" />
+    <script src="./assets/app.js?v=1781245878214" defer=""></script>
+  </head>
+  <body class="bg-[#0b0908]">
+    <div id="root">
+      <div
+        class="min-h-screen bg-brand-espresso text-brand-cream flex flex-col font-sans antialiased selection:bg-brand-gold/30"
+      >
+        <nav
+          class="fixed top-0 w-full bg-brand-espresso z-50 border-b border-brand-lightdark hover:border-brand-lightdark focus:border-brand-lightdark transition-colors duration-300"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+          >
+            <a
+              href="../index.html"
+              class="flex items-center gap-2.5 group cursor-pointer"
+              ><div
+                class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-darkgold to-brand-gold flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"
+              >
+                <i data-lucide="coffee" class="w-4 h-4 text-brand-espresso"></i>
+              </div>
+              <div class="text-left leading-none">
+                <span
+                  class="block text-lg font-bold tracking-widest text-brand-gold font-serif"
+                  >OBSCURA</span
+                ><span
+                  class="block text-[9px] uppercase tracking-widest text-brand-gold/80"
+                  >Coffee Roasters</span
+                >
+              </div></a
+            >
+            <div class="hidden md:flex gap-6 items-center">
+              <div class="relative group py-2 flex flex-col items-center">
+                <button
+                  class="text-sm font-medium transition-all flex items-center gap-1 text-white/75 hover:text-white"
+                >
+                  Home<i
+                    data-lucide="chevron-down"
+                    class="w-3 h-3 opacity-60 transition-transform group-hover:rotate-180"
+                  ></i></button
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 hidden group-hover:block animate-fade-in-up"
+                >
+                  <div
+                    class="nav-dropdown-menu bg-brand-medium border border-transparent hover:border-brand-lightdark focus:border-brand-lightdark rounded-xl shadow-xl py-1 w-28"
+                  >
+                    <a
+                      href="../index.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Home 1</a
+                    ><a
+                      href="home2.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Home 2</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="shop.html"
+                  class="inline-block text-sm font-medium transition-all text-brand-gold font-semibold"
+                  >Shop</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-full opacity-100"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="coffee-club.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Coffee Club</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="contact.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Contact</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative flex flex-col items-center py-2">
+                <a
+                  href="about-beans.html"
+                  class="inline-block text-sm font-medium transition-all text-white/75 hover:text-white"
+                  >Beans Story</a
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+              </div>
+              <div class="relative group py-2 flex flex-col items-center">
+                <button
+                  class="text-sm font-medium transition-all flex items-center gap-1 text-white/75 hover:text-white"
+                >
+                  Dashboard<i
+                    data-lucide="chevron-down"
+                    class="w-3 h-3 opacity-60 transition-transform group-hover:rotate-180"
+                  ></i></button
+                ><span
+                  class="absolute -bottom-[1px] left-1/2 -translate-x-1/2 h-[2px] rounded-full bg-brand-gold transition-all duration-300 w-0 opacity-0"
+                ></span>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 hidden group-hover:block animate-fade-in-up"
+                >
+                  <div
+                    class="nav-dropdown-menu bg-brand-medium border border-transparent hover:border-brand-lightdark focus:border-brand-lightdark rounded-xl shadow-xl py-1 w-44"
+                  >
+                    <a
+                      href="admin-dashboard.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >Admin Dashboard</a
+                    ><a
+                      href="dashboard.html"
+                      class="block w-full text-center px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors text-brand-cream/80 hover:bg-brand-gold/10 hover:text-brand-gold"
+                      >User Dashboard</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                title="Switch to RTL"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all bg-white/5 border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25 hidden md:flex"
+              >
+                <span>RTL</span></button
+              ><button
+                title="Switch to Light mode"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold hidden md:flex"
+              >
+                <i data-lucide="sun" class="w-3.5 h-3.5"></i>
+              </button>
+              <div class="w-px h-5 bg-white/15 mx-1 hidden md:block"></div>
+              <button
+                class="p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors relative"
+                aria-label="Cart"
+              >
+                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+              </button>
+              <div class="relative hidden md:block">
+                <a
+                  href="login.html"
+                  class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-[#A66820] text-brand-cream hover:bg-[#8e581b] shadow-[0_4px_14px_rgba(166,104,32,0.4)] hover:shadow-[0_4px_14px_rgba(166,104,32,0.5)] border border-[#A66820]"
+                  ><i data-lucide="user" class="w-3.5 h-3.5"></i
+                  ><span class="hidden sm:inline">Sign In</span></a
+                >
+              </div>
+              <button
+                class="md:hidden mobile-menu-btn p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors"
+                aria-label="Open menu"
+              >
+                <i data-lucide="menu" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div id="mobile-drawer" class="fixed inset-0 z-50 md:hidden hidden">
+          <div
+            class="fixed inset-0 bg-black/60 backdrop-blur-sm drawer-backdrop"
+          ></div>
+          <div
+            class="fixed top-0 right-0 bottom-0 w-72 bg-white dark:bg-[#0b0908] border-l border-brand-lightdark p-6 pb-12 flex flex-col justify-between animate-slide-in-right shadow-2xl overflow-y-auto"
+          >
+            <div class="flex-grow pr-1">
+              <div
+                class="flex items-center justify-between mb-8 border-b border-brand-lightdark pb-4"
+              >
+                <span
+                  class="font-serif font-bold text-brand-gold tracking-widest text-xl"
+                  >OBSCURA</span
+                ><button
+                  class="text-neutral-500 hover:text-neutral-900 dark:text-brand-cream/60 dark:hover:text-brand-cream p-1 drawer-close"
+                >
+                  <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+              </div>
+              <div class="flex flex-col gap-1 mb-6">
+                <div class="flex flex-col">
+                  <button
+                    class="submenu-toggle text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors flex justify-between items-center text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >
+                    <span>Home</span
+                    ><i
+                      data-lucide="chevron-down"
+                      class="w-4 h-4 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="submenu-content pl-4 pr-2 py-1 flex flex-col gap-1 mt-1 border-l border-brand-gold/20 ml-5 hidden"
+                  >
+                    <a
+                      href="../index.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Home 1</a
+                    ><a
+                      href="home2.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Home 2</a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="shop.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors bg-brand-gold/15 text-brand-gold font-semibold"
+                  >Shop</a
+                ><a
+                  href="coffee-club.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Coffee Club</a
+                ><a
+                  href="contact.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Contact</a
+                ><a
+                  href="about-beans.html"
+                  class="inline-block text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >Beans Story</a
+                >
+                <div class="flex flex-col">
+                  <button
+                    class="submenu-toggle text-left text-base px-3 py-2.5 rounded-lg font-medium transition-colors flex justify-between items-center text-neutral-800 hover:bg-neutral-100 hover:text-neutral-900 dark:text-brand-cream/80 dark:hover:bg-brand-gold/10 dark:hover:text-brand-cream"
+                  >
+                    <span>Dashboard</span
+                    ><i
+                      data-lucide="chevron-down"
+                      class="w-4 h-4 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="submenu-content pl-4 pr-2 py-1 flex flex-col gap-1 mt-1 border-l border-brand-gold/20 ml-5 hidden"
+                  >
+                    <a
+                      href="admin-dashboard.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >Admin Dashboard</a
+                    ><a
+                      href="dashboard.html"
+                      class="inline-block text-left text-sm px-3 py-2 rounded-md transition-colors text-neutral-600 hover:bg-neutral-50 dark:text-brand-cream/70 dark:hover:bg-brand-gold/5"
+                      >User Dashboard</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-brand-lightdark pt-5 space-y-4">
+              <div class="flex gap-3">
+                <button
+                  title="Switch to RTL"
+                  class="flex-grow flex items-center justify-center py-2.5 rounded-xl border border-transparent hover:border-current focus:border-current text-sm font-bold uppercase tracking-wider transition-all bg-white/5 border-transparent focus:border-white/10 text-white/60 hover:text-white hover:border-white/25"
+                >
+                  <span>RTL</span></button
+                ><button
+                  title="Switch to Light mode"
+                  class="flex-grow flex items-center justify-center py-2.5 rounded-xl border border-transparent hover:border-current focus:border-current transition-all bg-brand-gold/15 border-transparent hover:border-brand-gold/40 focus:border-brand-gold/40 text-brand-gold"
+                >
+                  <i data-lucide="sun" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <a
+                href="login.html"
+                class="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-brand-darkgold to-brand-gold text-brand-espresso font-bold uppercase tracking-widest text-xs rounded-full py-3.5 hover:brightness-110 transition-all shadow-md shadow-brand-gold/20 mobile-login-btn"
+                ><i data-lucide="user" class="w-4 h-4"></i
+                ><span>Sign In</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <main class="flex-grow">
+          <div class="animate-fade-in-up">
+            <section
+              class="relative py-16 sm:py-20 bg-zinc-950 text-white overflow-hidden flex items-center"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center opacity-15"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=1920&amp;q=80&quot;);
+                "
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-espresso to-transparent"
+              ></div>
+              <div
+                class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-6"
+              >
+                <span
+                  class="inline-block text-xs font-bold uppercase tracking-widest text-brand-gold bg-brand-gold/15 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 px-4 py-1.5 rounded-full"
+                  >Specialty Sourcing &amp; Gear</span
+                >
+                <h1
+                  class="text-4xl sm:text-6xl font-bold font-serif leading-tight"
+                >
+                  The Coffee &amp;
+                  <span class="text-brand-gold">Barista</span> Shop
+                </h1>
+                <p
+                  class="text-brand-latte/80 text-sm sm:text-lg max-w-xl leading-relaxed"
+                >
+                  Explore our curated catalog of seasonal roasted single-origin
+                  micro-lots, award-winning signature blends, and precision
+                  brewing tools.
+                </p>
+                <div class="flex gap-4 pt-2">
+                  <a
+                    href="shop.html"
+                    class="inline-block bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all shadow-lg active:scale-95"
+                    >Browse Beans</a
+                  ><button
+                    class="bg-transparent hover:bg-white/10 text-white border border-transparent hover:border-white/20 focus:border-white/20 text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all active:scale-95"
+                  >
+                    Brewing Tools
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="bg-brand-lightdark py-12">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                <div
+                  id="shop-filter-bar"
+                  class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-transparent hover:border-neutral-900 focus:border-neutral-900 pb-10"
+                >
+                  <div class="lg:col-span-7 space-y-3">
+                    <div class="flex items-center gap-2 text-brand-gold">
+                      <i
+                        data-lucide="sparkles"
+                        class="w-4 h-4 animate-pulse"
+                      ></i
+                      ><span class="text-xs uppercase tracking-widest font-bold"
+                        >Seattle Small-Batch Roastery</span
+                      >
+                    </div>
+                    <h2 class="text-3xl font-serif font-bold text-brand-cream">
+                      Roaster Fresh Catalog
+                    </h2>
+                    <p
+                      class="text-brand-latte/70 text-sm max-w-xl leading-relaxed"
+                    >
+                      Every single-origin batch is roasted to order on Monday
+                      mornings and shipped fresh on Tuesdays.
+                    </p>
+                  </div>
+                  <div
+                    class="lg:col-span-5 bg-brand-medium/55 border border-transparent hover:border-brand-gold/20 focus:border-brand-gold/20 p-5 rounded-3xl space-y-4 shadow-xl"
+                  >
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-2.5">
+                        <i
+                          data-lucide="calendar"
+                          class="w-5 h-5 text-brand-gold"
+                        ></i
+                        ><span class="text-sm font-bold text-brand-cream"
+                          >This Week's Roasting Run</span
+                        >
+                      </div>
+                      <span class="relative flex h-2 w-2"
+                        ><span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                        ></span
+                        ><span
+                          class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                        ></span
+                      ></span>
+                    </div>
+                    <div class="space-y-2.5 text-xs">
+                      <div
+                        class="flex justify-between border-b border-transparent hover:border-neutral-850 focus:border-neutral-850 pb-2"
+                      >
+                        <span class="text-neutral-400">Next Roast Batch:</span
+                        ><span class="font-bold text-brand-cream"
+                          >Monday (In 14 hours)</span
+                        >
+                      </div>
+                      <div
+                        class="flex justify-between border-b border-transparent hover:border-neutral-850 focus:border-neutral-850 pb-2"
+                      >
+                        <span class="text-neutral-400">Shipped Date:</span
+                        ><span class="font-bold text-brand-cream"
+                          >Wednesday (Roast Fresh)</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-neutral-400">Order cutoff:</span
+                        ><span class="font-bold text-brand-gold"
+                          >Order in next 3 hours</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-brand-medium/40 border border-transparent hover:border-neutral-850 focus:border-neutral-850 rounded-3xl p-6 sm:p-8 space-y-5 shadow-lg"
+                >
+                  <div>
+                    <span
+                      class="text-[10px] uppercase font-bold tracking-widest text-brand-gold bg-brand-gold/15 px-2.5 py-1 rounded"
+                      >Interactive Help</span
+                    >
+                    <h3
+                      class="text-xl font-serif font-bold text-brand-cream mt-2.5"
+                    >
+                      Need Help Deciding? Quick Match:
+                    </h3>
+                    <p class="text-xs text-brand-latte/75 mt-0.5">
+                      Click a preference below to instantly filter our roasting
+                      catalog to match your mood.
+                    </p>
+                  </div>
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <button
+                      class="text-left p-3.5 bg-brand-espresso/50 border border-transparent focus:border-neutral-850 hover:border-brand-gold/45 rounded-2xl transition-all duration-300 group"
+                    >
+                      <p
+                        class="text-xs font-bold text-brand-cream group-hover:text-brand-gold transition-colors"
+                      >
+                        Light &amp; Floral (East Africa)
+                      </p>
+                      <p
+                        class="text-[10px] text-neutral-500 mt-1 uppercase font-mono"
+                      >
+                        Light Roast
+                      </p></button
+                    ><button
+                      class="text-left p-3.5 bg-brand-espresso/50 border border-transparent focus:border-neutral-850 hover:border-brand-gold/45 rounded-2xl transition-all duration-300 group"
+                    >
+                      <p
+                        class="text-xs font-bold text-brand-cream group-hover:text-brand-gold transition-colors"
+                      >
+                        Sweet &amp; Balanced (South America)
+                      </p>
+                      <p
+                        class="text-[10px] text-neutral-500 mt-1 uppercase font-mono"
+                      >
+                        Medium Roast
+                      </p></button
+                    ><button
+                      class="text-left p-3.5 bg-brand-espresso/50 border border-transparent focus:border-neutral-850 hover:border-brand-gold/45 rounded-2xl transition-all duration-300 group"
+                    >
+                      <p
+                        class="text-xs font-bold text-brand-cream group-hover:text-brand-gold transition-colors"
+                      >
+                        Rich &amp; Earthy (Sumatra)
+                      </p>
+                      <p
+                        class="text-[10px] text-neutral-500 mt-1 uppercase font-mono"
+                      >
+                        Dark Roast
+                      </p></button
+                    ><button
+                      class="text-left p-3.5 bg-brand-espresso/50 border border-transparent focus:border-neutral-850 hover:border-brand-gold/45 rounded-2xl transition-all duration-300 group"
+                    >
+                      <p
+                        class="text-xs font-bold text-brand-cream group-hover:text-brand-gold transition-colors"
+                      >
+                        Limited Reserve (Panama Geisha)
+                      </p>
+                      <p
+                        class="text-[10px] text-neutral-500 mt-1 uppercase font-mono"
+                      >
+                        Light Roast
+                      </p>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center bg-brand-medium/40 border border-transparent hover:border-neutral-900 focus:border-neutral-900 rounded-2xl p-5 shadow-lg"
+                >
+                  <div class="lg:col-span-4 relative">
+                    <i
+                      data-lucide="search"
+                      class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500"
+                    ></i
+                    ><input
+                      placeholder="Search beans, origins, equipment..."
+                      class="w-full bg-brand-espresso border border-transparent hover:border-neutral-800 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold/30 rounded-xl py-3 pl-11 pr-4 text-sm text-brand-cream placeholder-neutral-500 outline-none transition-all"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    class="lg:col-span-4 flex bg-brand-espresso border border-transparent hover:border-neutral-800 focus:border-neutral-800 rounded-xl p-1"
+                  >
+                    <button
+                      class="flex-1 text-center py-2 text-xs font-semibold uppercase tracking-wider rounded-lg transition-colors capitalize bg-brand-gold text-brand-espresso"
+                    >
+                      Show All</button
+                    ><button
+                      class="flex-1 text-center py-2 text-xs font-semibold uppercase tracking-wider rounded-lg transition-colors capitalize text-brand-latte/70 hover:text-brand-cream"
+                    >
+                      Beans</button
+                    ><button
+                      class="flex-1 text-center py-2 text-xs font-semibold uppercase tracking-wider rounded-lg transition-colors capitalize text-brand-latte/70 hover:text-brand-cream"
+                    >
+                      Brewing Tools
+                    </button>
+                  </div>
+                  <div class="lg:col-span-4 relative">
+                    <select
+                      class="w-full bg-brand-espresso border border-transparent hover:border-neutral-800 focus:border-brand-gold rounded-xl py-3 px-4 text-xs font-semibold uppercase tracking-wider text-brand-cream outline-none cursor-pointer appearance-none"
+                    >
+                      <option value="default">Default Sort</option>
+                      <option value="price-low">Price: Low to High</option>
+                      <option value="price-high">Price: High to Low</option>
+                      <option value="rating">Highest Rating</option>
+                    </select>
+                    <div
+                      class="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none border-l border-transparent hover:border-neutral-800 focus:border-neutral-800 pl-2"
+                    >
+                      <i
+                        data-lucide="sliders-horizontal"
+                        class="w-3.5 h-3.5 text-neutral-500"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-wrap items-center gap-4 bg-brand-medium/15 border border-transparent hover:border-neutral-900/40 focus:border-neutral-900/40 rounded-xl p-4 text-xs"
+                >
+                  <span
+                    class="text-brand-gold font-bold uppercase tracking-widest shrink-0 mr-2"
+                    >Filter Beans:</span
+                  >
+                  <div class="flex items-center space-x-2">
+                    <span class="text-neutral-400">Roast:</span
+                    ><select
+                      class="bg-brand-espresso border border-transparent hover:border-neutral-800 focus:border-neutral-800 rounded-lg px-3 py-1.5 text-brand-cream outline-none"
+                    >
+                      <option value="all">All Roasts</option>
+                      <option value="Light">Light Roast</option>
+                      <option value="Medium">Medium Roast</option>
+                      <option value="Medium-Dark">Medium-Dark</option>
+                      <option value="Dark">Dark Roast</option>
+                    </select>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-neutral-400">Origin:</span
+                    ><select
+                      class="bg-brand-espresso border border-transparent hover:border-neutral-800 focus:border-neutral-800 rounded-lg px-3 py-1.5 text-brand-cream outline-none"
+                    >
+                      <option value="all">All Origins</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Sumatra">Sumatra</option>
+                      <option value="Panama">Panama</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="bg-brand-espresso py-14">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Ethiopia Yirgacheffe G1"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        /><span
+                          class="absolute bottom-3 left-3 bg-brand-espresso/90 text-[10px] text-brand-gold font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-transparent hover:border-brand-gold/15 focus:border-brand-gold/15 font-mono"
+                          >Light Roast</span
+                        >
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Coffee Bean</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.9</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Ethiopia Yirgacheffe G1
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          A grade-1 lot representing the finest floral and
+                          citrus expressions of Yirgacheffe. Complex acidity
+                          balanced by clean sweetness.
+                        </p>
+                      </div>
+                      <div class="flex flex-wrap gap-1 mt-3.5">
+                        <span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Jasmine</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Peach</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Bergamot</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Lemon Tea</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$19.50</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Colombia Huila Supremo"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        /><span
+                          class="absolute bottom-3 left-3 bg-brand-espresso/90 text-[10px] text-brand-gold font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-transparent hover:border-brand-gold/15 focus:border-brand-gold/15 font-mono"
+                          >Medium Roast</span
+                        >
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Coffee Bean</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.8</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Colombia Huila Supremo
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          Rich, nutty, and brilliantly sweet. A classic cup
+                          featuring deep caramel undertones and a bright
+                          apple-like acidity.
+                        </p>
+                      </div>
+                      <div class="flex flex-wrap gap-1 mt-3.5">
+                        <span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Milk Chocolate</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Red Apple</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Caramel</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Toasted Pecan</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$18.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Sumatra Mandheling Organic"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        /><span
+                          class="absolute bottom-3 left-3 bg-brand-espresso/90 text-[10px] text-brand-gold font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-transparent hover:border-brand-gold/15 focus:border-brand-gold/15 font-mono"
+                          >Dark Roast</span
+                        >
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Coffee Bean</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.7</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Sumatra Mandheling Organic
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          Intense, full-bodied, and deeply earthy. This
+                          wet-hulled cup features notes of dark chocolate and
+                          forest herbs with low acidity.
+                        </p>
+                      </div>
+                      <div class="flex flex-wrap gap-1 mt-3.5">
+                        <span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Dark Chocolate</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Cedar</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Tobacco Leaf</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Licorice</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$20.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Obscura Signature Blend"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        /><span
+                          class="absolute bottom-3 left-3 bg-brand-espresso/90 text-[10px] text-brand-gold font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-transparent hover:border-brand-gold/15 focus:border-brand-gold/15 font-mono"
+                          >Medium-Dark Roast</span
+                        >
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Coffee Bean</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">5.0</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Obscura Signature Blend
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          Our signature roasting masterpiece. Blended to offer a
+                          rich crema, heavy body, and dark cherry notes. Perfect
+                          for modern espresso.
+                        </p>
+                      </div>
+                      <div class="flex flex-wrap gap-1 mt-3.5">
+                        <span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Cherry Cordial</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Brown Sugar</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Cocoa Nibs</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Spiced Plum</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$21.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Panama Geisha Finca Esmeralda"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        /><span
+                          class="absolute bottom-3 left-3 bg-brand-espresso/90 text-[10px] text-brand-gold font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-transparent hover:border-brand-gold/15 focus:border-brand-gold/15 font-mono"
+                          >Light Roast</span
+                        >
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Coffee Bean</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">5.0</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Panama Geisha Finca Esmeralda
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          An exceptional, world-renowned micro-lot. Unparalleled
+                          elegance characterized by intense floral aromas and a
+                          sweet, tea-like body.
+                        </p>
+                      </div>
+                      <div class="flex flex-wrap gap-1 mt-3.5">
+                        <span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Bergamot</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Jasmine Bloom</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Mandarin</span
+                        ><span
+                          class="bg-brand-espresso/60 text-[9px] text-brand-cream/80 px-2 py-0.5 rounded font-medium"
+                          >Honey</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$32.50</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Fellow Ode Brew Grinder Gen 2"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        />
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Equipment</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.9</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Fellow Ode Brew Grinder Gen 2
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          A powerful, precise, and beautiful home coffee
+                          grinder. Features professional-grade 64mm flat burrs,
+                          anti-static technology, and 31 grind settings.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$345.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Fellow Stagg EKG Electric Kettle"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        />
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Equipment</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.8</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Fellow Stagg EKG Electric Kettle
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          The electric pour-over kettle for coffee lovers.
+                          Temperature control to the degree, sleek minimalist
+                          base, and a counterbalanced handle for gooseneck
+                          precision.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$165.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Hario V60 Drip Decanter"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        />
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Equipment</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.7</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Hario V60 Drip Decanter
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          Heatproof borosilicate glass decanter with a removable
+                          silicone collar. Combines the classic V60 paper
+                          filtration system with a server.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$35.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="group cursor-pointer rounded-2xl border border-transparent focus:border-neutral-850 bg-brand-medium/40 p-4.5 flex flex-col justify-between hover:border-brand-gold/30 hover:bg-brand-medium/60 transition-all duration-300 relative"
+                  >
+                    <button
+                      class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-brand-espresso/80 backdrop-blur-sm flex items-center justify-center border border-transparent hover:border-neutral-850/60 focus:border-neutral-850/60 text-neutral-400 hover:text-red-500 transition-colors"
+                      aria-label="Add to favorites"
+                    >
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </button>
+                    <div>
+                      <div
+                        class="relative aspect-square rounded-xl overflow-hidden bg-brand-espresso mb-4.5"
+                      >
+                        <img
+                          alt="Chemex Classic Series 6-Cup"
+                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        />
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span
+                          class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                          >Equipment</span
+                        >
+                        <div class="flex items-center text-brand-gold">
+                          <i
+                            data-lucide="star"
+                            class="w-3 h-3 fill-brand-gold stroke-0"
+                          ></i
+                          ><span class="ml-1 font-bold">4.9</span>
+                        </div>
+                      </div>
+                      <div class="mt-2 space-y-1.5">
+                        <h3
+                          class="text-base font-bold text-brand-cream truncate group-hover:text-brand-gold transition-colors"
+                        >
+                          Chemex Classic Series 6-Cup
+                        </h3>
+                        <p
+                          class="text-xs text-brand-latte/70 line-clamp-2 leading-relaxed"
+                        >
+                          Made of non-porous borosilicate glass which will not
+                          absorb odors or chemical residues. Iconic hourglass
+                          shape with wood collar and leather tie.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between pt-4.5 mt-4.5 border-t border-transparent hover:border-neutral-850/80 focus:border-neutral-850/80"
+                    >
+                      <span
+                        class="text-base font-serif font-bold text-brand-cream font-mono"
+                        >$49.00</span
+                      ><button
+                        class="bg-brand-gold/10 border border-transparent focus:border-brand-gold/25 hover:bg-brand-gold hover:text-brand-espresso hover:border-transparent text-brand-gold text-xs font-semibold uppercase tracking-wider py-2 px-4 rounded-full transition-all flex items-center"
+                      >
+                        <i
+                          data-lucide="shopping-cart"
+                          class="w-3.5 h-3.5 mr-1.5"
+                        ></i>
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="bg-brand-lightdark py-14">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                <div
+                  class="bg-brand-medium/30 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-8 rounded-3xl space-y-6"
+                >
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="globe" class="w-6 h-6 text-brand-gold"></i>
+                    <h3 class="text-xl font-serif font-bold text-brand-cream">
+                      100% Traceability &amp; Direct Trade Values
+                    </h3>
+                  </div>
+                  <p
+                    class="text-xs text-brand-latte/80 leading-relaxed max-w-3xl"
+                  >
+                    At Obscura, we are committed to complete transparency. Every
+                    single bag of coffee we sell can be traced back to its
+                    specific washing station, farming cooperative, or estate
+                    lot. We purchase green coffee directly from growers and
+                    mills, bypassing intermediary brokers, and paying 2-3x Fair
+                    Trade minimum prices.
+                  </p>
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+                    <div
+                      class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-4 rounded-2xl text-center space-y-1"
+                    >
+                      <p
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                      >
+                        Fair Price Paid
+                      </p>
+                      <p class="text-xs font-bold text-brand-cream">
+                        240% Fairtrade Min
+                      </p>
+                    </div>
+                    <div
+                      class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-4 rounded-2xl text-center space-y-1"
+                    >
+                      <p
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                      >
+                        SCA Certified Score
+                      </p>
+                      <p class="text-xs font-bold text-brand-cream">
+                        86+ Points Guaranteed
+                      </p>
+                    </div>
+                    <div
+                      class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-4 rounded-2xl text-center space-y-1"
+                    >
+                      <p
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                      >
+                        Farming Co-ops
+                      </p>
+                      <p class="text-xs font-bold text-brand-cream">
+                        Direct Relationship
+                      </p>
+                    </div>
+                    <div
+                      class="bg-brand-espresso/60 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-4 rounded-2xl text-center space-y-1"
+                    >
+                      <p
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest font-mono"
+                      >
+                        Roasting Style
+                      </p>
+                      <p class="text-xs font-bold text-brand-cream">
+                        Micro-batch Profiles
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-brand-medium to-brand-espresso border border-transparent hover:border-brand-gold/30 focus:border-brand-gold/30 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl"
+                >
+                  <div class="space-y-2">
+                    <div class="flex items-center gap-2 text-brand-gold">
+                      <i data-lucide="coffee" class="w-4 h-4"></i
+                      ><span
+                        class="text-[10px] uppercase font-bold tracking-widest"
+                        >Obscura Club Subscription</span
+                      >
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-brand-cream">
+                      Subscribe and Save 15%
+                    </h3>
+                    <p class="text-xs text-brand-latte/75 max-w-xl">
+                      Join the Obscura Coffee Club to unlock recurring automatic
+                      fresh shipments directly from our roasting run. Skip or
+                      cancel anytime.
+                    </p>
+                  </div>
+                  <button
+                    class="bg-brand-gold hover:bg-brand-gold/90 text-brand-espresso font-bold uppercase tracking-wider text-xs py-3.5 px-8 rounded-full shadow-lg transition-all shrink-0"
+                  >
+                    Join Subscription Club
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="bg-brand-espresso py-14">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3"
+                  >
+                    <i
+                      data-lucide="clock"
+                      class="w-6 h-6 text-brand-gold mx-auto"
+                    ></i>
+                    <h4 class="text-sm font-bold text-brand-cream">
+                      Roasted Fresh to Order
+                    </h4>
+                    <p class="text-xs text-brand-latte/70 leading-relaxed">
+                      We package and ship within 48 hours of roasting to
+                      guarantee your beans arrive with optimal aromatics.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3"
+                  >
+                    <i
+                      data-lucide="shield-check"
+                      class="w-6 h-6 text-brand-gold mx-auto"
+                    ></i>
+                    <h4 class="text-sm font-bold text-brand-cream">
+                      Equipment Guarantee
+                    </h4>
+                    <p class="text-xs text-brand-latte/70 leading-relaxed">
+                      All our selected brewing gear comes with an official
+                      manufacturer warranty and free lifetime support.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-brand-medium/20 border border-transparent hover:border-neutral-850 focus:border-neutral-850 p-6 rounded-3xl space-y-3"
+                  >
+                    <i
+                      data-lucide="scale"
+                      class="w-6 h-6 text-brand-gold mx-auto"
+                    ></i>
+                    <h4 class="text-sm font-bold text-brand-cream">
+                      Free Shipping on Gear
+                    </h4>
+                    <p class="text-xs text-brand-latte/70 leading-relaxed">
+                      Enjoy free shipping on all orders over $75 and direct
+                      carbon offsets on every dispatch.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer
+          class="bg-brand-espresso border-t border-transparent hover:border-neutral-900 focus:border-neutral-900 pt-16 pb-8"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-transparent hover:border-neutral-900 focus:border-neutral-900"
+            >
+              <div class="md:col-span-4 space-y-5">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="w-8 h-8 rounded-lg bg-brand-gold flex items-center justify-center"
+                  >
+                    <i
+                      data-lucide="coffee"
+                      class="w-4.5 h-4.5 text-brand-espresso"
+                    ></i>
+                  </div>
+                  <span
+                    class="font-serif font-bold tracking-widest text-brand-cream text-lg"
+                    >OBSCURA</span
+                  >
+                </div>
+                <p class="text-sm text-brand-latte/70 leading-relaxed max-w-sm">
+                  We source single-origin micro-lots directly from remote farms.
+                  Roasted in micro-batches with meticulous temperature curves to
+                  unlock the true terroir of each bean.
+                </p>
+                <p class="text-xs text-brand-gold font-sans font-semibold">
+                  ROASTED FRESH IN SEATTLE, WA
+                </p>
+              </div>
+              <div class="md:col-span-2 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Explore
+                </h4>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      href="shop.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Shop Catalog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="coffee-club.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Coffee Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="about-beans.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Seed-to-Cup Journey</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-2 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Support
+                </h4>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Roastery FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="comingsoon.html"
+                      class="inline-block text-sm text-brand-latte/80 hover:text-brand-cream hover:underline transition-colors"
+                      >Shipping &amp; Returns</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-4 space-y-4">
+                <h4
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-gold"
+                >
+                  Stay Roasted
+                </h4>
+                <p class="text-sm text-brand-latte/70">
+                  Subscribe to receive micro-lot releases, roast dates, and
+                  professional brewing guides.
+                </p>
+                <form class="relative mt-2">
+                  <input
+                    required=""
+                    placeholder="Enter your email"
+                    class="w-full bg-brand-medium border border-transparent hover:border-neutral-800 rounded-lg py-3 pl-4 pr-12 text-sm text-brand-cream placeholder-neutral-500 outline-none focus:border-brand-gold/50"
+                    type="email"
+                    value=""
+                  /><button
+                    type="submit"
+                    class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-brand-gold hover:bg-brand-gold/85 text-brand-espresso p-1.5 rounded-md transition-colors"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-latte/50"
+            >
+              <p>
+                © 2026 Obscura Coffee Roasters. Crafted with premium terroir.
+              </p>
+              <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Privacy Policy</a
+                ><a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Terms of Service</a
+                ><a
+                  href="comingsoon.html"
+                  class="inline-block hover:text-brand-cream transition-colors cursor-pointer bg-transparent border-0 p-0 text-brand-latte/50"
+                  >Sitemap</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="../js/theme.js?v=1781245913707" defer=""></script>
+    <script src="../js/rtl.js?v=1781245913707" defer=""></script>
+    <script src="../js/navigation.js?v=1781245913707" defer=""></script>
+  </body>
+</html>
