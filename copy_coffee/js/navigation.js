@@ -65,19 +65,56 @@
     });
 
     function showToast(message) {
+      let styleTag = document.getElementById("toast-styles");
+      if (!styleTag) {
+        styleTag = document.createElement("style");
+        styleTag.id = "toast-styles";
+        styleTag.innerHTML = `
+          .custom-toast-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+          .custom-toast {
+            background-color: #D4AF37;
+            color: #1E1A16;
+            padding: 12px 20px;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(40px);
+            opacity: 0;
+            font-family: inherit;
+          }
+          .custom-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        `;
+        document.head.appendChild(styleTag);
+      }
+
       let toastContainer = document.getElementById("toast-container");
       if (!toastContainer) {
         toastContainer = document.createElement("div");
         toastContainer.id = "toast-container";
-        toastContainer.className =
-          "fixed bottom-6 right-6 z-[100] flex flex-col gap-3";
+        toastContainer.className = "custom-toast-container";
         document.body.appendChild(toastContainer);
       }
 
       const toast = document.createElement("div");
-      toast.className =
-        "bg-brand-gold text-brand-espresso px-5 py-3 rounded-xl shadow-xl shadow-black/20 font-bold text-sm transform transition-all duration-300 translate-y-10 opacity-0 flex items-center gap-2 border border-brand-gold/50";
-      toast.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4"></i> <span>${message}</span>`;
+      toast.className = "custom-toast";
+      toast.innerHTML = `<i data-lucide="check-circle" style="width:16px;height:16px;"></i> <span>${message}</span>`;
 
       toastContainer.appendChild(toast);
 
@@ -86,11 +123,12 @@
       }
 
       requestAnimationFrame(() => {
-        toast.classList.remove("translate-y-10", "opacity-0");
+        void toast.offsetWidth; // force reflow
+        toast.classList.add("show");
       });
 
       setTimeout(() => {
-        toast.classList.add("translate-y-10", "opacity-0");
+        toast.classList.remove("show");
         setTimeout(() => toast.remove(), 300);
       }, 3000);
     }
